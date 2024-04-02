@@ -865,6 +865,9 @@ body{
 	/*.body-img-div{
 		display: none;
 	}*/
+	#Page>.page-content {
+	    padding-top: 0;
+	}
 	.module-module_a .wrap-text-in-md, .module-module_b .wrap-text-in-md, .module-module_c .wrap-text-in-md {
 	    margin-top: 18px;
 	}
