@@ -1,0 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.md-offices h2{
+	margin-top: revert;
+    margin-bottom: revert;
+}
+#Header .menu ul.inner-page li div, #Header .menu ul.inner-page li:nth-child(4) div, #Header .menu ul.inner-page li:nth-child(4) div:before{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(6) div, #Header .menu ul.inner-page li:nth-child(6) div:before{
+    opacity: 1;
+}

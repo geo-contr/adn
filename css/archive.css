@@ -1,0 +1,825 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body{
+	-webkit-animation: load .5s .9s both;
+	        animation: load .5s .9s both;
+}
+body.body-overflow{
+	padding-right: 17px;
+}
+@-webkit-keyframes load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media(min-width: 1440px){
+	.container-fluid{
+		width: auto;
+	}
+}
+@media(min-width: 1000px){
+	.to-landing #Header .nav.active {
+	    -webkit-animation: leftToRight 0s both;
+	    animation: leftToRight 0s both;
+	}
+	.container-fluid{
+		width: auto;
+	}
+	#PageArchivedProjects .project-archived-item .project-archived-img img {
+	    width: 100%;
+	    position: inherit;
+	    top: 0;
+	    left: 0;
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(4){
+		margin-top: calc(-1% + 3px);
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(5){
+		margin-top: calc(1% + 13px);
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(6){
+		margin-top:calc(-1% - 27px);
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(7){
+		margin-top:calc(2% - 0px);
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(8){
+		margin-top: calc(-20% + 23px);
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(9){
+		margin-top: calc(1% - 14px);
+	}
+	#PageArchivedProjects .project-archived-item:nth-child(10){
+		margin-top: calc(-20% + 20px);
+	}
+	/*.module-gallery-shen .content-gallery .project-archived-des, .module-gallery-folies .content-gallery .project-archived-des, .module-gallery-basque .content-gallery .project-archived-des, .module-gallery-aarhus .content-gallery .project-archived-des, .module-gallery-campus .content-gallery .project-archived-des, .module-gallery-maersk .content-gallery .project-archived-des, .module-gallery-museum .content-gallery .project-archived-des, .module-gallery-church .content-gallery .project-archived-des, .module-gallery-trell .content-gallery .project-archived-des, .module-gallery-nobel .content-gallery .project-archived-des {
+		position: absolute;
+	    top: 35px;
+	    width: 100%;
+	    text-align: center;
+	}
+	.module-gallery-shen .content-gallery .project-archived-des h3, .module-gallery-folies .content-gallery .project-archived-des h3, .module-gallery-basque .content-gallery .project-archived-des h3, .module-gallery-aarhus .content-gallery .project-archived-des h3, .module-gallery-campus .content-gallery .project-archived-des h3, .module-gallery-maersk .content-gallery .project-archived-des h3, .module-gallery-museum .content-gallery .project-archived-des h3, .module-gallery-church .content-gallery .project-archived-des h3, .module-gallery-trell .content-gallery .project-archived-des h3, .module-gallery-nobel .content-gallery .project-archived-des h3{
+		font-size: 16px;
+	    line-height: 21px;
+	    font-weight: 500;
+	    margin-bottom: 3px;
+	}*/
+	/*.module-gallery-shen .swiper-slide:nth-child(1){
+		background-image: url(../img/3xn_MaritimeMuseumShenzhen_CrashingWavesB_Final_Sora.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-shen .swiper-slide:nth-child(2){
+		background-image: url(../img/3xn_MaritimeMuseumShenzhen_Vertex_Final_Sora_web.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-folies .swiper-slide{
+		background-image: url(../img/1445-Folie-République-Montpellier-The-curve.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-folies .swiper-slide:nth-child(2){
+		background-image: url(../img/1445-Folie-République-Montpellier-Street-arrival.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-folies .swiper-slide:nth-child(3){
+		background-image: url(../img/1445-Folie-République-Montpellier-Sunny-terraces.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-folies .swiper-slide:nth-child(4){
+		display: inherit;
+		background-image: url(../img/1445-Folie-République-Montpellier-Terraces-Green.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-basque .swiper-slide{
+		background-image: url(../img/3XN_BasqueCulinaryCenter_Render-credits-SORA-1.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-basque .swiper-slide:nth-child(2){
+		background-image: url(../img/3XN_BasqueCulinaryCenter_Renders-3XN-2.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-basque .swiper-slide:nth-child(3){
+		background-image: url(../img/Render-credits-SORA-4.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-aarhus .swiper-slide{
+		background-image: url(../img/13.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-aarhus .swiper-slide:nth-child(2){
+		background-image: url(../img/3XN_AarhusStadion_Spotted_Final_Sora.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-campus .swiper-slide{
+		background-image: url(../img/1250_Campus_Freimann_archive_portrait_exterior_2000x1048.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-campus .swiper-slide:nth-child(2){
+		background-image: url(../img/1250_Campus_Freimann_archive_exterior_1909x1000.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-campus .swiper-slide:nth-child(3){
+		background-image: url(../img/1250_Campus_Freimann_archive_exterior2_1269x1200.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-campus .swiper-slide:nth-child(4){
+		display: inherit;
+		background-image: url(../img/1250_Campus_Freimann_archive_interior_1667x1000.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-campus .swiper-slide:nth-child(5){
+		background-image: url(../img/1250_Campus_Freimann_archive_exterior_1925x1000.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-maersk .swiper-slide{
+		background-image: url(../img/1429_Maersk_AMG44_Street-facade.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-maersk .swiper-slide:nth-child(2){
+		background-image: url(../img/1429_Maersk_AMG44_Aerial_fullsize.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-maersk .swiper-slide:nth-child(3){
+		background-image: url(../img/1429_Maersk_AMG44_View01_Street_View_Entrance.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-museum .swiper-slide{
+		background-image: url(../img/01_print.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-church .swiper-slide{
+		background-image: url(../img/1241_Church_and_Wellesley_archive_portrait_2000x3069.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-church .swiper-slide:nth-child(2){
+		background-image: url(../img/1241_Church_and_Wellesley_archive_slider2_1557x1000.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-trell .swiper-slide{
+		background-image: url(../img/1203_Ny_Trelleborg_master_portrait.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-nobel .swiper-slide{
+		background-image: url(../img/1150_Nobel_View_6_case-top-image-2.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}
+	.module-gallery-nobel .swiper-slide:nth-child(2){
+		background-image: url(../img/Nobel-Centre_1920x1080.webp);
+		height: 100vh;
+	    background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-clip: content-box;
+	    padding: 130px 40px;
+	}*/
+	.page_pointer_none{
+		pointer-events: none;
+	}
+	
+	.close-gallery-btn{
+		pointer-events: all;
+		z-index: 1;
+	}
+	.swiper-button{
+		position: relative;
+	}
+	.slick-next.swiper-button-next, .slick-prev.swiper-button-prev{
+		width: calc(50% - 70px);
+		top: 0;
+		height: 0;
+		pointer-events: all;
+	}
+	.module-gallery .slick-next {
+	    right: 0;
+	}
+	.module-gallery .slick-next .icon-arrow {
+	    /*right: 40px;*/
+	    left: 0;
+	}
+	.module-gallery .slick-prev {
+	    left: 0;
+	    width: calc(50% - 70px);
+	    /*height: 0;*/
+	    pointer-events: all;
+	}
+	.module-gallery .slick-prev .icon-arrow {
+	    left: initial;
+	    right: 0;
+	}
+	.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+	    bottom: 62px;
+	    left: 0;
+	    width: 100%;
+	}
+	.link-other-project.next {
+	    right: 40px;
+	}
+	.link-other-project.prev {
+	    left: 40px;
+	}
+	.link-other-project.next .label span:nth-child(1), .link-other-project.prev .label span:nth-child(1) {
+	    display: none;
+	}
+}
+.module-gallery-shen .content-gallery .project-archived-des, .module-gallery-folies .content-gallery .project-archived-des, .module-gallery-basque .content-gallery .project-archived-des, .module-gallery-aarhus .content-gallery .project-archived-des, .module-gallery-campus .content-gallery .project-archived-des, .module-gallery-maersk .content-gallery .project-archived-des, .module-gallery-museum .content-gallery .project-archived-des, .module-gallery-church .content-gallery .project-archived-des, .module-gallery-trell .content-gallery .project-archived-des, .module-gallery-nobel .content-gallery .project-archived-des {
+	position: absolute;
+    top: 35px;
+    width: 100%;
+    text-align: center;
+}
+	.module-gallery-shen .content-gallery .project-archived-des h3, .module-gallery-folies .content-gallery .project-archived-des h3, .module-gallery-basque .content-gallery .project-archived-des h3, .module-gallery-aarhus .content-gallery .project-archived-des h3, .module-gallery-campus .content-gallery .project-archived-des h3, .module-gallery-maersk .content-gallery .project-archived-des h3, .module-gallery-museum .content-gallery .project-archived-des h3, .module-gallery-church .content-gallery .project-archived-des h3, .module-gallery-trell .content-gallery .project-archived-des h3, .module-gallery-nobel .content-gallery .project-archived-des h3{
+	font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.module-gallery-shen, .module-gallery-folies, .module-gallery-basque, .module-gallery-aarhus, .module-gallery-campus, .module-gallery-maersk, .module-gallery-museum, .module-gallery-church, .module-gallery-trell, .module-gallery-nobel{
+	visibility: hidden;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	pointer-events: all;
+	/*opacity: 0;*/
+}
+	.module-gallery-shen.active-gallery, .module-gallery-folies.active-gallery, /*.module-gallery-shen.active-gallery-shen,*/ /*.module-gallery-folies.active-gallery-folies,*/ .module-gallery-basque.active-gallery, .module-gallery-aarhus.active-gallery, .module-gallery-campus.active-gallery, .module-gallery-maersk.active-gallery, .module-gallery-museum.active-gallery, .module-gallery-church.active-gallery, .module-gallery-trell.active-gallery, .module-gallery-nobel.active-gallery{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.75s;
+	-o-transition: opacity 0.75s;
+	transition: opacity 0.75s;
+}
+.module-gallery-shen .swiper-slide:nth-child(1){
+	background-image: url(../img/3xn_MaritimeMuseumShenzhen_CrashingWavesB_Final_Sora.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-shen .swiper-slide:nth-child(2){
+	background-image: url(../img/3xn_MaritimeMuseumShenzhen_Vertex_Final_Sora_web.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-folies .swiper-slide{
+	background-image: url(../img/1445-Folie-République-Montpellier-The-curve.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-folies .swiper-slide:nth-child(2){
+	background-image: url(../img/1445-Folie-République-Montpellier-Street-arrival.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-folies .swiper-slide:nth-child(3){
+	background-image: url(../img/1445-Folie-République-Montpellier-Sunny-terraces.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-folies .swiper-slide:nth-child(4){
+	display: inherit;
+	background-image: url(../img/1445-Folie-République-Montpellier-Terraces-Green.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-basque .swiper-slide{
+	background-image: url(../img/3XN_BasqueCulinaryCenter_Render-credits-SORA-1.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-basque .swiper-slide:nth-child(2){
+	background-image: url(../img/3XN_BasqueCulinaryCenter_Renders-3XN-2.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-basque .swiper-slide:nth-child(3){
+	background-image: url(../img/Render-credits-SORA-4.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-aarhus .swiper-slide{
+	background-image: url(../img/13.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-aarhus .swiper-slide:nth-child(2){
+	background-image: url(../img/3XN_AarhusStadion_Spotted_Final_Sora.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-campus .swiper-slide{
+	background-image: url(../img/1250_Campus_Freimann_archive_portrait_exterior_2000x1048.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-campus .swiper-slide:nth-child(2){
+	background-image: url(../img/1250_Campus_Freimann_archive_exterior_1909x1000.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-campus .swiper-slide:nth-child(3){
+	background-image: url(../img/1250_Campus_Freimann_archive_exterior2_1269x1200.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-campus .swiper-slide:nth-child(4){
+	display: inherit;
+	background-image: url(../img/1250_Campus_Freimann_archive_interior_1667x1000.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-campus .swiper-slide:nth-child(5){
+	background-image: url(../img/1250_Campus_Freimann_archive_exterior_1925x1000.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-maersk .swiper-slide{
+	background-image: url(../img/1429_Maersk_AMG44_Street-facade.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-maersk .swiper-slide:nth-child(2){
+	background-image: url(../img/1429_Maersk_AMG44_Aerial_fullsize.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-maersk .swiper-slide:nth-child(3){
+	background-image: url(../img/1429_Maersk_AMG44_View01_Street_View_Entrance.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-museum .swiper-slide{
+	background-image: url(../img/01_print.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-church .swiper-slide{
+	background-image: url(../img/1241_Church_and_Wellesley_archive_portrait_2000x3069.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-church .swiper-slide:nth-child(2){
+	background-image: url(../img/1241_Church_and_Wellesley_archive_slider2_1557x1000.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-trell .swiper-slide{
+	background-image: url(../img/1203_Ny_Trelleborg_master_portrait.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-nobel .swiper-slide{
+	background-image: url(../img/1150_Nobel_View_6_case-top-image-2.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+.module-gallery-nobel .swiper-slide:nth-child(2){
+	background-image: url(../img/Nobel-Centre_1920x1080.webp);
+	height: 100vh;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    padding: 130px 40px;
+}
+/* CSS for the white background overlay */
+.swiper-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+}
+.swiper-overlay.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 1;
+    -webkit-transition: .75s;
+    -o-transition: .75s;
+    transition: .75s;
+}
+.museumSwiper .swiper-pagination, .trellSwiper .swiper-pagination{
+	display: inherit;
+}
+.icon-arrow {
+    width: 26px;
+    height: 26px;
+    background: url(../img/arrow-dark.svg) no-repeat center center;
+    background-size: 26px 19px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.link-other-project.prev{
+	position: absolute;
+    bottom: 30px;
+    font-size: 13px;
+    line-height: 21px;
+    z-index: 101;
+    cursor: pointer;
+}
+.link-other-project.next {
+    position: absolute;
+    bottom: 30px;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: right;
+    z-index: 101;
+    cursor: pointer;
+}
+@media(max-width: 999px){
+	#Header {
+	    -webkit-animation: topToBottom 0s both;
+	    animation: topToBottom 0s both;
+	    opacity: 0;
+	}
+	#PageProjects .categories-box .categories-list li:nth-child(1) {
+	    padding-left: 12px;
+	    margin-top: 35px;
+	}
+	#PageProjects .categories-box .categories-list li a {
+	    margin-left: -12px;
+	}
+	.swiper-button .slick-prev, .swiper-button .slick-next{
+		display: none;
+	}
+	.link-other-project.next .label span:nth-child(1), .link-other-project.prev .label span:nth-child(1) {
+	    display: none;
+	}
+	.link-other-project.next {
+	    right: 40px;
+	}
+	.link-other-project.prev {
+	    left: 40px;
+	}
+	.module-gallery .close-gallery-btn {
+	    z-index: 1;
+	}
+	.swiper-wrapper{
+		height: auto;
+	}
+	/*.wrap-bt-menu:hover .icon-menu span:nth-child(1) {
+	    -webkit-transform: translateY(0);
+	    -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    -o-transform: translateY(0);
+	    transform: translateY(0);
+	}
+	.wrap-bt-menu:hover .icon-menu span:nth-child(2) {
+	    -webkit-transform: translateY(0);
+	    -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    -o-transform: translateY(0);
+	    transform: translateY(0);
+	}
+	.wrap-bt-menu:hover .icon-menu span:nth-child(5) {
+	    -webkit-transform: translateY(0);
+	    -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    -o-transform: translateY(0);
+	    transform: translateY(0);
+	}
+	.wrap-bt-menu:hover .icon-menu span:nth-child(6) {
+	    -webkit-transform: translateY(0);
+	    -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	    -o-transform: translateY(0);
+	    transform: translateY(0);
+	}
+	.wrap-bt-menu:hover .icon-menu span {
+	    background: #494949;
+	}*/
+}
+@media(max-width: 540px){
+	.link-other-project.next {
+	    right: 40px;
+	    max-width: 150px;
+	}
+	.link-other-project.prev {
+	    left: 40px;
+	    max-width: 150px;
+	}
+}
+@media(max-width: 420px){
+	.link-other-project.next {
+	    right: 40px;
+	    max-width: 130px;
+	}
+	.link-other-project.prev {
+	    left: 40px;
+	    max-width: 130px;
+	}
+	.link-other-project.prev {
+	    position: absolute;
+	    bottom: 30px;
+	    font-size: 11px;
+	    line-height: 17px;
+	    z-index: 101;
+	    cursor: pointer;
+	}
+	.link-other-project.next {
+	    position: absolute;
+	    bottom: 30px;
+	    font-size: 11px;
+	    line-height: 17px;
+	    text-align: right;
+	    z-index: 101;
+	    cursor: pointer;
+	}
+}
+#Header .menu ul.inner-page li div{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(5) div, #Header .menu ul.inner-page li:nth-child(5) div:before{
+    opacity: 1;
+}
+#PageProjects .categories-box h3:nth-child(2){
+	margin-bottom: 13px;
+	display: inline-block;
+    border-radius: 100px;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 20px 0 20px;
+    margin-left: -20px;
+    position: relative;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+#PageProjects .categories-box .categories-list li:nth-child(1){
+	display: block;
+}
+#PageProjects .categories-box .categories-list li:hover a, #PageProjects .categories-box .categories-list li.active a, #PageProjects .categories-box h3:nth-child(2):hover {
+    background: rgba(73,73,73,.1);
+}
+.itemBox{
+	-webkit-animation: fadeIn 1s 1s both;
+	        animation: fadeIn 1s 1s both;
+}
+@-webkit-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+

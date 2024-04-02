@@ -1,0 +1,74 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.blocked.loaded .super-img img {
+    opacity: 1;
+}
+@media(min-width: 1000px){
+	#PageNews .lasted-news-box {
+	    position: relative;
+	    padding: 0;
+	    z-index: 10;
+	}
+	
+	.link-cta {
+	    font-size: 13px;
+	    line-height: 19px;
+	    max-width: 260px;
+	}
+
+
+	/*ბიძგის გარეშე*/
+	#PageNews .lasted-news-box.sticky {
+	    position: sticky;
+	    left: 95px !important;
+	}
+	.wrap-img:hover {
+	    -webkit-filter: contrast(.7) brightness(1.2);
+	            filter: contrast(.7) brightness(1.2);
+	    -webkit-transition: 0.5s;
+	    -o-transition: 0.5s;
+	    transition: 0.5s;
+	}
+	.blocked.loaded *:not(.super-img) {
+	    opacity: 1;
+	    -webkit-transition: .5s;
+	    -o-transition: .5s;
+	    transition: .5s;
+	}
+}
+@media(max-width: 999px){
+	.right-content{
+		width: 100%;
+	}
+	#PageNews .right-content{
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	#PageNews .right-content .row{
+		--bs-gutter-x: 0.5rem;
+	}
+	#PageNews .right-content .row .col-md-12{
+		padding-left: 23px;
+    	padding-right: 23px;
+	}
+}
+#Header .menu ul.inner-page li div{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(1) div, #Header .menu ul.inner-page li:nth-child(1) div:before{
+    opacity: 1;
+}
+#Header .menu ul.inner-page li div{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(2) div{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(2) div:before{
+	opacity: 0;
+}

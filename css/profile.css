@@ -1,0 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.v-desktop, .v-mobile{
+	padding-right: calc(var(--bs-gutter-x)* 0);
+    padding-left: calc(var(--bs-gutter-x)* 0);
+}
+@media(max-width: 999px){
+	.module-three_column_content .content-about h3.show-desktop {
+	    display: inherit;
+	}
+}
+
+#Header .menu ul.inner-page li div{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(2) div, #Header .menu ul.inner-page li:nth-child(2) div:before{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(3) div, #Header .menu ul.inner-page li:nth-child(3) div:before{
+    opacity: 1;
+}

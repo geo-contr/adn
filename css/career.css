@@ -1,0 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.row.module-big_image.mod-2 .ng-scope{
+	padding-right: calc(var(--bs-gutter-x)* 0);
+    padding-left: calc(var(--bs-gutter-x)* 0);
+}
+@media(max-width: 999px){
+	.positions.ng-scope h3{
+		margin-top: revert;
+		margin-bottom: revert;
+	}
+}
+
+#Header .menu ul.inner-page li div{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(2) div, #Header .menu ul.inner-page li:nth-child(5) div, #Header .menu ul.inner-page li:nth-child(2) div:before, #Header .menu ul.inner-page li:nth-child(5) div:before{
+    opacity: .5;
+}
+#Header .menu ul.inner-page li:nth-child(4) div, #Header .menu ul.inner-page li:nth-child(4) div:before{
+    opacity: 1;
+}
+
+.wrap-img:hover {
+    -webkit-filter: none;
+            filter: none;
+}
