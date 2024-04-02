@@ -1334,8 +1334,9 @@ body{
 	    }
 	}
 	#Header{
-		-webkit-animation: topToBottom .8s 4.6s both;
-        animation: topToBottom .8s 4.6s both;
+		-webkit-animation: topToBottom .8s 3s both;
+        animation: topToBottom .8s 3s both;
+        /*animation: topToBottom .8s 4.6s both;*/
         opacity: 0;
 	}
 	@-webkit-keyframes topToBottom {
