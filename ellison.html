@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html class="js no-touch csstransitions filereader desktop landscape overthrow-enabled ng-scope to-landing cookie-open" data-ng-app="3xn">
+<head>
+	<title>Ellison Institute of Technology</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- საიტის აიკონი, სადაც ჩატვირთვის ადგილას შეიძლება გამოჩნდეს ლოგო ან რაიმე ნიშანი. სამი მჭირდება ანდროიდზე რომ გამოჩნდეს? -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180.png">
+	<link rel="icon" sizes="32x32" type="image/png" href="img/favicon_32.png">
+	<link rel="icon" sizes="16x16" type="image/png" href="img/favicon_16.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"> <!-- The latest version -->
+	<link rel="stylesheet" type="text/css" href="css/baguetteBox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/4xn.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/ellison.css">
+</head>
+<body id="trigger-icon">
+	<div id="AppWrapper">
+		<header id="Header" data-ng-controller="HeaderCtrl" class="ng-scope">
+			<div class="overlay-menu"></div>
+			<div class="nav active">
+				<div class="container-fluid">
+					<a href="index.html" class="logo-3xn" data-ui-sref="pageLanding">
+						<img src="img/logo-3xn.svg">
+					</a>
+					<div class="wrap-bt-menu">
+						<div class="icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<a href="#;" class="logo-gxn">
+						<img src="img/logo-gxn.svg">
+					</a>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 wrap-main-menu">
+							<form class="search-wrapper ng-pristine ng-valid" action="" data-ng-submit="submitSearch()">
+								<div class="wrap-search">
+									<a href="#"><i class="icon-search"></i></a> 
+									<input type="search" placeholder="Search" data-ng-model="searchTerm" class="ng-pristine ng-untouched ng-valid">
+								</div>
+							</form>
+							<!-- <a ng-show="showSearch" class="link-cta back-to-menu ng-hide" href="#;" ng-click="backToMenu()">Back to menu</a> -->
+							<div class="menu__wrapper hide-search">
+								<ul class="inner-page"> 
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="news.html">News</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="projects.html">Projects</a>
+										</div>
+									</li>
+									<li ng-repeat="item in menu" class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="profile.html">Profile</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="career.html">Career</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="archive.html">Archive</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="people.html">People</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<div ng-include="socialSharing()" class="wrap-social-sharing ng-scope">
+									<ul class="social-links ng-scope"></ul>
+								</div>
+								<ul class="social-links links-cookie">
+									<li>
+										<a ng-click="openCookieTab()">Cookie Settings</a>
+									</li>
+									<li>
+										<a ng-href="/declaration" href="#;">Cookie Policy</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 wrap-extra-main-menu">
+							<div class="bg-cover">
+								<img alt="Ørestad College" src="img/07_023_Oerestad_Gymnasium_095_V.webp">
+							</div>
+							<a class="logo-gxn" href="#;">
+								<img alt="gxn" src="img/logo-gxn-white.svg">
+							</a>
+							<div class="menu__wrapper">
+								<ul class="inner-page">
+									<li>
+										<h3 class="head-line">Discover BXN, a creative studio with a concept of constant development and perfection.
+										</h3>
+									</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<a>Featured project: Untitled
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="Page" data-ui-view="Page">
+			<div class="page-content show-gallery page-detail page-project-detail ng-scope load-case-top-text load-case-intro load-case-top-image" id="Page-epfl-ecotope">
+				<div class="container-fluid project-top-content">
+					<div class="row full">
+						<div id="pinContainer" class="wrap-case-top-intro">
+							<div class="case-top">
+								<div class="img-desktop ng-scope">
+									<div class="super-img ng-isolate-scope loaded">
+										<img src="img/EPFL_Ecotope_Aerial_v2.webp">
+										<div class="click-gallery"></div>
+										<ng-transclude></ng-transclude>
+									</div>
+								</div>
+								<div class="wrap-text">
+									<div class="row">
+										<h4 class="col-xs-12 col-md-5 col-lg-4 ng-binding epfl">Ellison Institute of Technology</h4>
+										<h2 class="col-xs-10 col-md-7 col-lg-6" id="typewriter"></h2>
+										<div class="col-xs-12 col-md-2 wrap-link">
+											<a class="link-cta link-view-all negative negativeText" data-ui-sref="pageProjects" href="projects.html">
+												<i class="icon-grid negative"></i>View all projects
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel case-intro case-intro-active" id="case-intro">
+								<div class="row">
+									<div class="col-md-5 col-lg-6 wrap-text">
+										<div class="row">
+											<div class="col-sm-8">
+												<div class="text-top">
+													<div class="text-inner">
+														<h4>Information</h4>
+														<h1 class="ng-binding">Ellison Institute of Technology</h1>
+														<div class="teaser ng-binding" ng-bind-html="case_intro.introduction_teaser">
+															<p>Established eight years ago as a research and development centre for cancer and wellness, healthcare and global public health, EIT has now broadened its mission to focus on four key areas of scientific and technological innovation: medical science and healthcare, food security and sustainable agriculture and government policy and economics.</p>
+														</div>
+													</div>
+												</div>
+												<div class="link-more-info" ng-click="toggleMore($event)">
+													<span class="link-cta">More information</span>
+												</div>
+												<div class="text-detail">
+													<div class="text-inner">
+														<ul>
+															<li ng-if="case_intro.client" class="ng-binding ng-scope">
+																<span>Client:</span> Ellison Institute of Technology
+															</li>
+															<li ng-if="case_intro.location" class="ng-binding ng-scope">
+																<span>Location:</span> Maryland, United States
+															</li>
+															<li ng-if="case_intro.size_possible_to_write_m2" class="ng-binding ng-scope">
+																<span>Size:</span> 30.000 m<sup>2</sup>
+															</li>
+															<li ng-if="case_intro.collaborators" class="ng-binding ng-scope">
+																<span>Collaborators:</span> Executive Architect
+															</li>
+															<li ng-if="case_intro.status" class="ng-binding ng-scope">
+																<span>Status:</span> Competition submission in 2022
+															</li>
+															<li ng-if="case_intro.program_function" class="ng-binding ng-scope">
+																<span>Program:</span> Education, shared office, event space and lab space
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="wrap-link-show-more">
+												<div class="link-cta link-show-more">
+													More information
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="col-md-7 col-lg-6 wrap-img desktop notHover">
+										<div class="super-img ng-isolate-scope loaded">
+											<img src="img/EPFL_Ecotope_6_square.webp">
+											<div class="click-gallery"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid detail-modules-wrapper ng-scope">
+					<div class="row module-text mod-0">
+						<div class="ng-scope">
+							<div class="col-md-5 col-lg-4 md-text left">
+								<h2 class="ng-binding ng-scope">A campus influenced by human behavior and the natural environment</h2>
+								<div class="editor font-id00 ng-binding">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+									<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="galerea">
+						<div class="row module-image mod-1 target-gallery in-gallery"> 
+							<div class="ng-scope">
+								<div class="col-md-10 col-md-offset-1 md-image md-image-width">
+									<div class="super-img ng-isolate-scope loaded">
+										<a href="img/Site-Axo.webp">
+											<img src="img/Site-Axo.webp">
+											<div class="click-gallery"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row module-quote mod-2">
+							<div class="ng-scope">
+								<div class="col-md-9 center">
+									<h2 class="ng-binding">
+										<p>“Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis.”</p>
+									</h2>
+									<h4 class="ng-binding ng-scope">Van Hanussen, Senior Partner-in-Charge<br>
+									</h4>
+								</div>
+							</div>
+						</div>
+						<div class="row module-image mod-3 target-gallery in-gallery">
+							<div class="ng-scope">
+								<div class="col-md-10 col-md-offset-1 md-image md-image-width">
+									<div class="super-img ng-isolate-scope loaded">
+										<a href="img/EPFL_Ecotope_1.webp">
+											<img src="img/EPFL_Ecotope_1.webp">
+											<div class="click-gallery"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row module-double_image_text_option mod-4 target-gallery in-gallery">
+							<div class="ng-scope">
+								<div class="col-md-5 col-lg-4 wrap-text-in-md col-md-offset-6">
+									<h2 class="ng-binding ng-scope">Key design principles</h2>
+									<div class="text font-id00 ng-binding ng-scope">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+										<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>
+									</div>
+								</div>
+								<div class="col-md-10 col-md-offset-1 md-image-width">
+									<div class="row">
+										<div class="col-md-6 master md-image-width">
+											<div class="ng-scope">
+												<div class="ratio-1x1 super-img ng-isolate-scope loaded">
+													<a href="img/Ecotope-Vision_English_Two-lines-1.webp">
+														<img src="img/Ecotope-Vision_English_Two-lines-1.webp">
+														<div class="click-gallery"></div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 md-image-width">
+											<div class="ng-scope">
+												<div class="ratio-1x1 super-img super-img-after ng-isolate-scope loaded">
+													<a href="img/EPFL_2.webp">
+														<img src="img/EPFL_2.webp">
+														<div class="click-gallery"></div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row module-image_gallery_slider mod-5 target-gallery in-gallery">
+							<div class="ng-scope">
+								<div class="col-lg-4 col-md-5 content-module md-image-width">
+									<h2 class="ng-binding">Encouraging unplanned interaction</h2>
+									<h5 class="label ng-binding"></h5>
+									<p class="font-id00 ng-binding"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+								</div>
+								<div class="col-lg-7 col-md-5 col-xs-10 col-lg-offset-1 col-md-offset-2 col-xs-offset-2 list-image-slider image-slider ng-isolate-scope image-slider-left" list="module.sliders" wrapper="module.wrapper">
+									<div class="column-slider column-slider_nth">
+										<div class="list-slider swiper">
+											<div class="item-slider swiper-wrapper">
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/07-Ground-Floor-Program_Ecotope.webp">
+															<img src="img/07-Ground-Floor-Program_Ecotope.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">1 / 4</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Ground Floor Concept</h3>
+															<div class="ng-binding">
+																<p class="swiper-no-swiping">The ground floor is tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+															</div>
+														</div>
+													</div>
+													<div class="click-next swiper-button">
+														<button type="button" class="arrow next swiper-button-next"></button>
+													</div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/08-Etage-Courant-Program_ecotope.webp">
+															<img src="img/08-Etage-Courant-Program_ecotope.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">2 / 4</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Standard Floor Plan</h3>
+															<div class="ng-binding">
+																<p class="swiper-no-swiping">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/09-R4-Program_ecotope.webp">
+															<img src="img/09-R4-Program_ecotope.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">3 / 4</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Top floor concept</h3>
+															<div class="ng-binding">
+																<p class="swiper-no-swiping">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/06-Pull-down-roof_Ecotope.webp">
+															<img src="img/06-Pull-down-roof_Ecotope.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">4 / 4</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Roof concept</h3>
+															<div class="ng-binding">
+																<p class="swiper-no-swiping">There are consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud velit.</p>
+															</div>
+														</div>
+													</div>
+													<div class="item"></div>
+													<div class="click-next click-next-idden swiper-button swiper-button_prev">
+														<button type="button" class="arrow next swiper-button-next"></button>
+														<button type="button" class="arrow next swiper-button-prev"></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row module-image mod-6 target-gallery in-gallery">
+							<div class="ng-scope">
+								<div class="col-md-10 col-md-offset-1 md-image md-image-width">
+									<div class="super-img ng-isolate-scope loaded">
+										<a href="img/EPFL_Ecotope_Kitchen_03.webp">
+											<img src="img/EPFL_Ecotope_Kitchen_03.webp">
+											<div class="click-gallery"></div>
+										</a>
+									</div>
+									<p class="caption ng-binding ng-scope">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row module-gxn mod-7  target-gallery in-gallery">
+							<div class="ng-scope">
+								<div class="col-xs-12">
+									<div class="logo-gxn">
+										
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5 content-module">
+									<h2 class="ng-binding">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</h2>
+									<p class="ng-binding">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+								</div>
+								<div class="col-lg-7 col-md-5 col-xs-10 col-lg-offset-1 col-md-offset-2 col-xs-offset-2 list-image-slider image-slider ng-isolate-scope image-slider-left">
+									<div class="column-slider column-slider-nth">
+										<div class="list-slider swiper1">
+											<div class="item-slider swiper-wrapper">
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/EPFL_Website-images-GXN_-3.webp">
+															<img src="img/EPFL_Website-images-GXN_-3.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">1 / 5</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Increasing collisionable hours</h3>
+															<div class="ng-binding"></div>
+														</div>
+													</div>
+													<div class="click-next swiper-button">
+														<button type="button" class="arrow next swiper-button-next1"></button>
+													</div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/EPFL_Website-images-GXN_-2.webp">
+															<img src="img/EPFL_Website-images-GXN_-2.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">2 / 5</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Utilising the psychology of movement</h3>
+															<div class="ng-binding"></div>
+														</div>
+													</div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/EPFL_Website-images-GXN_-18.webp">
+															<img src="img/EPFL_Website-images-GXN_-18.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<!-- <div class="content has-padding">
+														<div class="indicated ng-binding ng-scope">3 / 5</div>
+													</div> -->
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">3 / 5</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Designing for restoration of the mind</h3>
+															<div class="ng-binding"></div>
+														</div>
+													</div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/EPFL_Website-images-GXN_-4.webp">
+															<img src="img/EPFL_Website-images-GXN_-4.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">4 / 5</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Supporting introverts</h3>
+															<div class="ng-binding"></div>
+														</div>
+													</div>
+													<div class="item"></div>
+												</div>
+												<div class="item ng-scope swiper-slide">
+													<div class="super-img ng-isolate-scope loaded">
+														<a href="img/EPFL_Website-images-GXN_-14.webp">
+															<img src="img/EPFL_Website-images-GXN_-14.webp">
+															<div class="click-gallery"></div>
+														</a>
+													</div>
+													<div class="content has-padding">
+														<div class="indicated ng-binding ng-scope swiper-no-swiping">5 / 5</div>
+														<div class="inner-text">
+															<h3 class="ng-binding swiper-no-swiping">Displaying companies and individuals</h3>
+															<div class="ng-binding"></div>
+														</div>
+													</div>
+													<div class="item"></div>
+													<div class="click-next click-next-idden swiper-button swiper-button_prev">
+														<button type="button" class="arrow next swiper-button-next1"></button>
+														<button type="button" class="arrow next swiper-button-prev1"></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer" id="Footer">
+				<div class="container-fluid">
+					<div class="row wrap-social-sharing ng-scope">
+						<ul class="social-links ng-scope"></ul>
+					</div>
+					<div class="row wrap-address">
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">Tbilisi</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN Tbilisi A/S</p>
+								<p>Rustaveli Ave 8</p>
+								<p>2357 Tbilisi</p>
+								<p>Georgia</p>
+								<p>&nbsp;</p>
+								<p>VAT: DK368749</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+995 358796</p>
+								<a href="mailto:branch.email" class="ng-binding ng-scope">4xn@4xn.ge</a>
+								<a class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">Berlin</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN Germany</p>
+								<p>Bismarckstraße 15 A</p>
+								<p>225 46&nbsp;Berlin</p>
+								<p>Germany</p>
+								<p>&nbsp;</p>
+								<p>Org. nr.: 996845-5072</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+ 80 (0) 561610478</p>
+								<a class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">New York</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN&nbsp;USA LLC</p>
+								<p>248 Madison Ave</p>
+								<p>Building 52, Floor 14, Unit 6</p>
+								<p>Brooklyn, NY&nbsp;22568</p>
+								<p>New York</p>
+								<p>USA</p>
+								<p>&nbsp;</p>
+								<div></div>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+7 55 689 4566</p>
+								<a href="mailto:branch.email" class="ng-binding ng-scope">nycoffice@4xn.us</a>
+								<a ng-if="branch.slug" class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">Sydney</p>
+							<div class="address-des ng-binding ng-scope">
+								<p class="p1">
+									<span class="s1">4XN&nbsp;Australia Pty. Ltd.</span>
+								</p>
+								<p>Shop 1, 369 Levonshire Street</p>
+								<p>Hurry Hills MSW 3020</p>
+								<p>Australia</p>
+								<p>&nbsp;</p>
+								<p>ABN 50 520 303 620</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+00 3 5888 4475 </p>
+								<a class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">London</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN London Limited</p>
+								<p>The Frames</p>
+								<p>1 Oxford Street</p>
+								<p>London&nbsp;EC5B 9RT</p>
+								<p>United Kingdom</p>
+								<p>&nbsp;</p>
+								<p>VAT: GB657984132</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+66 5542 65875</p>
+							</div>
+						</div>
+					</div>
+					<div class="row d-block">
+						<div class="col-xs-6 col-md-6 col-lg-4">
+							<a ng-href="#;" data-target="_blank" class="link-cta cookie-link ng-binding" href="#;">Privacy policy</a> 
+							<a class="link-cta cookie-link">Cookie Settings</a> 
+							<a ng-href="#;" class="link-cta cookie-link" href="#;">Cookie Policy</a>
+						</div>
+						<div class="wrap-link-arrow trigger-container">
+							<a href="#trigger-icon">
+							<span class="link-with-arrow text-left">Back to top<i class="icon-arrow white up"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
+	<!-- თუ მინდა, რომ იმუშაოს toggler-მა bootstrap 5-ში, bootstrap.min.js უნდა გავთიშო -->
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+	<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+	<script type="text/javascript" src="js/baguetteBox.js"></script>
+	<!-- <script src="js/debug.addIndicators.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/swiper-bundle.js"></script> -->
+	<script type="text/javascript" src="js/swiper-bundle.min.js"></script> <!-- The latest version -->
+	<script type="text/javascript" src="js/ellison.js"></script>
+
+
+	<script>
+		// page reload to the top of the screen
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+	</script>
+
+
+</body>
+</html>

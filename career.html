@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="js no-touch csstransitions filereader desktop landscape overthrow-enabled ng-scope to-landing cookie-open" data-ng-app="3xn">
+<head>
+	<title>4XN Career</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- საიტის აიკონი, სადაც ჩატვირთვის ადგილას შეიძლება გამოჩნდეს ლოგო ან რაიმე ნიშანი. სამი მჭირდება ანდროიდზე რომ გამოჩნდეს? -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_180.png">
+	<link rel="icon" sizes="32x32" type="image/png" href="img/favicon_32.png">
+	<link rel="icon" sizes="16x16" type="image/png" href="img/favicon_16.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper-bundle.css"> --> 
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css"> <!-- The latest version -->
+	<link rel="stylesheet" type="text/css" href="css/4xn.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/archive.css">
+	<link rel="stylesheet" type="text/css" href="css/career.css">
+</head>
+<body id="trigger-icon">
+	<div id="AppWrapper">
+		<header id="Header" data-ng-controller="HeaderCtrl" class="ng-scope">
+			<div class="overlay-menu"></div>
+			<div class="nav active">
+				<div class="container-fluid">
+					<a href="index.html" class="logo-3xn" data-ui-sref="pageLanding">
+						<img src="img/logo-3xn.svg">
+					</a>
+					<div class="wrap-bt-menu">
+						<div class="icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<a href="#;" class="logo-gxn">
+						<img src="img/logo-gxn.svg">
+					</a>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 wrap-main-menu">
+							<form class="search-wrapper ng-pristine ng-valid" action="" data-ng-submit="submitSearch()">
+								<div class="wrap-search">
+									<a href="#"><i class="icon-search"></i></a> 
+									<input type="search" placeholder="Search" data-ng-model="searchTerm" class="ng-pristine ng-untouched ng-valid">
+								</div>
+							</form>
+							<!-- <a ng-show="showSearch" class="link-cta back-to-menu ng-hide" href="#;" ng-click="backToMenu()">Back to menu</a> -->
+							<div class="menu__wrapper hide-search">
+								<ul class="inner-page"> 
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="news.html">News</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="projects.html">Projects</a>
+										</div>
+									</li>
+									<li ng-repeat="item in menu" class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="profile.html">Profile</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="career.html">Career</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="archive.html">Archive</a>
+										</div>
+									</li>
+									<li class="ng-scope">
+										<div class="ng-scope">
+											<a class="ng-binding" href="people.html">People</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<div class="wrap-social-sharing ng-scope">
+									<ul class="social-links ng-scope"></ul>
+								</div>
+								<ul class="social-links links-cookie">
+									<li>
+										<a href="#;">Cookie Settings</a>
+									</li>
+									<li>
+										<a href="#;">Cookie Policy</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 wrap-extra-main-menu">
+							<div class="bg-cover">
+								<img alt="Ørestad College" src="img/07_023_Oerestad_Gymnasium_095_V.webp">
+							</div>
+							<a class="logo-gxn" href="#;">
+								<img alt="gxn" src="img/logo-gxn-white.svg">
+							</a>
+							<div class="menu__wrapper">
+								<ul class="inner-page">
+									<li>
+										<h3 class="head-line">Discover BXN, a creative studio with a concept of constant development and perfection.
+										</h3>
+									</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<a>Featured project: Untitled
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="Page" class="ng-scope">
+			<div class="page-content ng-scope" id="PageCareer">
+				<div class="container-fluid container-carrer ng-scope">
+					<div class="row teaser-top-content teaser-top-content-career">
+						<div class="col-xs-12 current-page ng-binding">Career</div>
+						<div class="col-xs-12 col-md-8 head">
+							<h1 class="ng-binding">
+								<p>We are continuously seeking skilled architects, architectural designers, and students. </p>
+							</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-md-5 col-md-push-6 image-wrap">
+							<img src="img/3XN_Office_LR-76-683x1024.webp">
+						</div>
+						<div class="col-xs-12 col-md-4 col-md-pull-4 text-wrap">
+							<div class="positions ng-scope">
+								<h3>Available positions</h3>
+								<ul class="career-list">
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Project Manager for 4XN - New York</a>
+									</li>
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Architect for 4XN - Berlin</a>
+									</li>
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Graduate Architect for 4XN - Berlin</a>
+									</li>
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Interns for BXN - Tbilisi</a>
+									</li>
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Designers for 4XN - London</a>
+									</li>
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Designers for 4XN - New York</a>
+									</li>
+									<li class="ng-scope">
+										<a target="_blank" class="ng-binding" href="#;">Architect/Engineer for BXN - Tbilisi</a>
+									</li>
+								</ul>
+							</div>
+							<div class="text ng-binding">
+								<p>Our recruitment process has been updated, and we now exclusively accept applications through the provided links.</p>
+								<p>Due to the massive response we receive, only short-listed candidates will hear back from us. We thank all candidates for their interest.</p>
+								<p>Feel free to subscribe to our mailing list to be notified about open positions through our <a href="#;">Job Agent</a>.</p>
+								<p>We offer internships twice annually, in spring and autumn, yet we encourage students to apply throughout the year.</p>
+								<p>Unsolicited applications are also welcome.</p>
+								<p>We look forward to hearing from you.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid detail-modules-wrapper ng-scope">
+					<div class="row module-module_a mod-0">
+						<div class="ng-scope">
+							<div class="col-sm-12 col-md-10 left">
+								<div class="wrap-img">
+									<div class="super-img ng-isolate-scope loaded">
+										<img src="img/R_Hjortshoj-3XN-Office-BW-67-module-A.webp">
+									</div>
+								</div>
+								<div class="wrap-text-in-md">
+									<h2 class="ng-binding">An informal workplace</h2>
+									<div class="text font-id00 ng-binding">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row module-double_image_text_option mod-1">
+						<div class="ng-scope">
+							<div class="col-md-5 col-lg-4 wrap-text-in-md col-md-offset-6">
+								<h2 ng-if="module.heading" class="ng-binding ng-scope">Architecture Influences Behavior</h2>
+								<div class="text font-id00 ng-binding ng-scope">
+									<p>The ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+								<a class="link-cta ng-binding ng-scope" href="#;">Read more about our philosophy</a>
+							</div>
+							<div class="col-sm-12 col-md-10 col-md-offset-1">
+								<div class="row">
+									<div class="col-sm-12 col-md-6 master">
+										<div class="ng-scope">
+											<div class="super-img ng-isolate-scope loaded">
+												<img src="img/R_Hjortshoj-3XN-Office-40-double-image-1024x732.webp">
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6">
+										<div class="ng-scope">
+											<div class="super-img ng-isolate-scope loaded">
+												<img src="img/R_Hjortshoj-3XN-Office-61-double-image-1024x732.webp">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row module-big_image mod-2">
+						<div class="ng-scope">
+							<div class="md-image">
+								<div class="super-img ng-isolate-scope loaded">
+									<img src="img/R_Hjortshoj-3XN-Office-BW-23-big-image.webp">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer" id="Footer">
+				<div class="container-fluid">
+					<div class="row wrap-social-sharing ng-scope">
+						<ul class="social-links ng-scope"></ul>
+					</div>
+					<div class="row wrap-address">
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">Tbilisi</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN Tbilisi A/S</p>
+								<p>Rustaveli Ave 8</p>
+								<p>2357 Tbilisi</p>
+								<p>Georgia</p>
+								<p>&nbsp;</p>
+								<p>VAT: DK368749</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+995 358796</p>
+								<a href="mailto:branch.email" class="ng-binding ng-scope">4xn@4xn.ge</a>
+								<a class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">Berlin</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN Germany</p>
+								<p>Bismarckstraße 15 A</p>
+								<p>225 46&nbsp;Berlin</p>
+								<p>Germany</p>
+								<p>&nbsp;</p>
+								<p>Org. nr.: 996845-5072</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+ 80 (0) 561610478</p>
+								<a class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">New York</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN&nbsp;USA LLC</p>
+								<p>248 Madison Ave</p>
+								<p>Building 52, Floor 14, Unit 6</p>
+								<p>Brooklyn, NY&nbsp;22568</p>
+								<p>New York</p>
+								<p>USA</p>
+								<p>&nbsp;</p>
+								<div></div>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+7 55 689 4566</p>
+								<a href="mailto:branch.email" class="ng-binding ng-scope">nycoffice@4xn.us</a>
+								<a ng-if="branch.slug" class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">Sydney</p>
+							<div class="address-des ng-binding ng-scope">
+								<p class="p1">
+									<span class="s1">4XN&nbsp;Australia Pty. Ltd.</span>
+								</p>
+								<p>Shop 1, 369 Levonshire Street</p>
+								<p>Hurry Hills MSW 3020</p>
+								<p>Australia</p>
+								<p>&nbsp;</p>
+								<p>ABN 50 520 303 620</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+00 3 5888 4475 </p>
+								<a class="link-cta ng-scope" href="#;">Read more</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 ng-scope">
+							<p class="head ng-binding ng-scope">London</p>
+							<div class="address-des ng-binding ng-scope">
+								<p>4XN London Limited</p>
+								<p>The Frames</p>
+								<p>1 Oxford Street</p>
+								<p>London&nbsp;EC5B 9RT</p>
+								<p>United Kingdom</p>
+								<p>&nbsp;</p>
+								<p>VAT: GB657984132</p>
+							</div>
+							<div class="more">
+								<p class="ng-binding ng-scope">+66 5542 65875</p>
+							</div>
+						</div>
+					</div>
+					<div class="row d-block">
+						<div class="col-xs-6 col-md-6 col-lg-4">
+							<a ng-href="#;" data-target="_blank" class="link-cta cookie-link ng-binding" href="#;">Privacy policy</a> 
+							<a class="link-cta cookie-link">Cookie Settings</a> 
+							<a ng-href="#;" class="link-cta cookie-link" href="#;">Cookie Policy</a>
+						</div>
+						<div class="wrap-link-arrow trigger-container">
+							<a href="#trigger-icon">
+							<span class="link-with-arrow text-left">Back to top<i class="icon-arrow white up"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
+	<!-- თუ მინდა, რომ იმუშაოს toggler-მა bootstrap 5-ში, bootstrap.min.js უნდა გავთიშო -->
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<!-- <script type="text/javascript" src="js/swiper-bundle.js"></script> -->
+	<script type="text/javascript" src="js/swiper-bundle.min.js"></script> <!-- The latest version -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+	<script type="text/javascript">
+		// page reload to the top of the screen
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+	</script>
+
+
+
+
+
+
+
+
+	<!-- <script id="spai_js">var spai_doSelectors=[{"selectors":"[data-spai-bg-on]","type":"attr","targetAttr":"style","attrType":"style"},{"selectors":"style","type":"inner","attrType":"style"},{"type":"__stylesheet"}];var spai_exclusions={"selectors":[],"urls":{"regex:\/\\\/\\\/([^\\\/]*\\.|)gravatar.com\\\/\/":{"lazy":0,"cdn":0,"resize":0,"lqip":0,"crop":-1}}};
+	</script> -->
+
+
+</body>
+</html>
