@@ -1001,6 +1001,7 @@ body{
 	}
 	#PageLanding .swiper-slide{
 		height: auto;
+		margin-top: -56px;
 		pointer-events: all;
 		-webkit-animation: right 2s 3s both, margTop 1.5s 4.6s both;
 		        animation: right 2s 3s both, margTop 1.5s 4.6s both;
