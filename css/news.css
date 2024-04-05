@@ -40,6 +40,14 @@
 	    -o-transition: .5s;
 	    transition: .5s;
 	}
+	.wrap-search{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.wrap-search input {
+	    width: auto;
+	}
 }
 @media(max-width: 999px){
 	.right-content{
@@ -71,4 +79,31 @@
 }
 #Header .menu ul.inner-page li:nth-child(2) div:before{
 	opacity: 0;
+}
+
+.dacposter .click-gallery{
+	/*display: none;*/
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.search-item[type="search"]::-webkit-search-cancel-button{
+	-webkit-appearance: none;
+	 position: relative;
+	 height: 3em;
+	 width: 2.5em;
+	 border-radius: 50em;
+	 background: url(../img/clear.svg) no-repeat 50% 50%;
+	 -webkit-transform: translateX(5px);
+	         transform: translateX(5px);
+	 background-size: contain;
+	 opacity: 0;
+	 pointer-events: none;
+	 cursor: pointer;
+}
+.search-item[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: 1;
+    pointer-events: all;
 }
