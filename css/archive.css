@@ -9,9 +9,6 @@ body{
 	-webkit-animation: load .5s .9s both;
 	        animation: load .5s .9s both;
 }
-body.body-overflow{
-	padding-right: 17px;
-}
 @-webkit-keyframes load{
     0%{
         opacity: 0;
@@ -34,6 +31,9 @@ body.body-overflow{
 	}
 }
 @media(min-width: 1000px){
+	body.body-overflow{
+		padding-right: 17px;
+	}
 	.to-landing #Header .nav.active {
 	    -webkit-animation: leftToRight 0s both;
 	    animation: leftToRight 0s both;
