@@ -649,3 +649,207 @@ if (mediaQuery.matches) {
 // }, 2500);
 
 // end of how to remove an HTML class at a specific time
+
+
+
+// Search
+// // Get references to the input field and the list of results
+// const searchInput = document.getElementById('searchInput');
+// const resultsList = document.getElementById('resultsList');
+// const listItems = Array.from(resultsList.getElementsByTagName('li'));
+
+
+// // Add event listener for input changes
+// searchInput.addEventListener('input', function() {
+//     const searchTerm = searchInput.value.toLowerCase(); // Get the search term
+
+//     // Filter list items based on the search term
+//     const filteredItems = listItems.filter(item => {
+//         return item.textContent.toLowerCase().includes(searchTerm);
+//     });
+
+//     // Update the displayed results
+//     displayResults(filteredItems);
+// });
+
+// // Function to display filtered results
+// function displayResults(filteredItems) {
+//     // Clear previous results
+//     resultsList.innerHTML = '';
+
+//     // Append filtered items to the results list
+//     filteredItems.forEach(item => {
+//         resultsList.appendChild(item.cloneNode(true));
+//     });
+
+//     if (filteredItems.length === 0) {
+//         // If no results found, display a message
+//         const noResultsItem = document.createElement('li');
+//         noResultsItem.textContent = 'No results found.';
+//         resultsList.appendChild(noResultsItem);
+//     }
+// }
+
+
+
+// // Get references to the input field and the list of results
+// const searchInput = document.getElementById('searchInput');
+// const resultsList = document.getElementById('resultsList');
+
+// // Select elements with multiple tags or classes
+// const listItems = Array.from(resultsList.querySelectorAll('li, .lasted-information, .result'));
+
+// // Add event listener for input changes
+// searchInput.addEventListener('input', function() {
+//     const searchTerm = searchInput.value.toLowerCase(); // Get the search term
+
+//     // Filter list items based on the search term
+//     const filteredItems = listItems.filter(item => {
+//         return item.textContent.toLowerCase().includes(searchTerm);
+//     });
+
+//     // Update the displayed results
+//     displayResults(filteredItems);
+// });
+
+// // Function to display filtered results
+// function displayResults(filteredItems) {
+//     // Clear previous results
+//     resultsList.innerHTML = '';
+
+//     if (filteredItems.length === 0) {
+//         // If no results found, display a message
+//         const noResultsItem = document.createElement('li');
+//         noResultsItem.textContent = 'No results found.';
+//         resultsList.appendChild(noResultsItem);
+//     } else {
+//         // Append filtered items to the results list
+//         filteredItems.forEach(item => {
+//             resultsList.appendChild(item.cloneNode(true));
+//         });
+//     }
+// }
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const searchForm = document.querySelector('.search-wrapper');
+//     const searchInput = document.getElementById('searchInput');
+//     const resultsList = document.getElementById('resultsList');
+
+//     // Function to handle search
+//     function handleSearch(event) {
+//         event.preventDefault();
+//         const searchTerm = searchInput.value.trim().toLowerCase();
+
+//         // Get all items to search through
+//         const itemsToSearch = resultsList.querySelectorAll('li');
+
+//         // Loop through each item to check if it contains the search term
+//         itemsToSearch.forEach(item => {
+//             const text = item.textContent.toLowerCase();
+//             if (text.includes(searchTerm)) {
+//                 item.style.display = 'block';
+//             } else {
+//                 item.style.display = 'none';
+//             }
+//         });
+//     }
+
+//     // Add event listener to form submission
+//     searchForm.addEventListener('submit', handleSearch);
+// });
+
+
+// without totalResults
+// $(document).ready(function() {
+//     // Function to handle search
+//     function handleSearch() {
+//         var searchTerm = $('#searchInput').val().toLowerCase();
+//         var $itemsToSearch = $('.news, .projects, .profile, .career, .archive, .people, .lasted-information, .related-news, .related-news-box, .discover, .cookSet, .cookPol, .featPro, .dacposter, .footer'); // Update this selector with the items you want to search through
+
+//         $itemsToSearch.each(function() {
+//             var $item = $(this);
+//             var text = $item.text().toLowerCase();
+
+//             if (text.includes(searchTerm)) {
+//                 $item.show(); // Show the item if it matches
+//             } else {
+//                 $item.hide(); // Hide the item if it doesn't match
+//             }
+//         });
+
+//         // Show "No results found" message if no items match
+//         var $noResultsMessage = $('#noResultsMessage');
+//         if ($itemsToSearch.filter(':visible').length === 0) {
+//             $noResultsMessage.show();
+//         } else {
+//             $noResultsMessage.hide();
+//         }
+//     }
+
+//     // Event listener for search input
+//     $('#searchInput').on('input', function() {
+//         handleSearch();
+//     });
+
+//     // Initial search on page load
+//     handleSearch();
+// });
+
+
+// ამას ვიყენებ
+$(document).ready(function() {
+    // Function to handle search
+    function handleSearch() {
+        var searchTerm = $('#searchInput').val().toLowerCase();
+        var $itemsToSearch = $('.news, .projects, .profile, .career, .archive, .people, .lasted-information, .related-news, .related-news-box, .discover, .cookSet, .cookPol, .featPro, .dacposter, .footer'); // Update this selector with the items you want to search through
+
+        var totalResults = 0; // Variable to count total results
+
+        $itemsToSearch.each(function() {
+            var $item = $(this);
+            var text = $item.text().toLowerCase();
+
+            if (text.includes(searchTerm)) {
+                $item.show(); // Show the item if it matches
+                totalResults++; // Increment total results
+            } else {
+                $item.hide(); // Hide the item if it doesn't match
+            }
+        });
+
+        // Show total results message only if there are results
+        var $totalResultsMessage = $('#totalResults');
+        if (searchTerm !== '') {
+            if (totalResults > 0) {
+                $totalResultsMessage.text('Search results in total for "' + searchTerm + '": ' + totalResults).show();
+            } else {
+                $totalResultsMessage.text('No results found for "' + searchTerm + '"').hide();
+            }
+        } else {
+            $totalResultsMessage.hide();
+        }
+
+        // Show "No results found" message if no items match
+        var $noResultsMessage = $('#noResultsMessage');
+        if (totalResults === 0 && searchTerm !== '') {
+            $noResultsMessage.show();
+        } else {
+            $noResultsMessage.hide();
+        }
+    }
+
+    // Event listener for search input
+    $('#searchInput').on('input', function() {
+        handleSearch();
+    });
+
+    // Initial search on page load
+    handleSearch();
+});
+
+
+
+
+// end of Search
