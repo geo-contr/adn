@@ -50,41 +50,43 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-xs-12 col-md-6 wrap-main-menu">
-							<form class="search-wrapper ng-pristine ng-valid" action="" data-ng-submit="submitSearch()">
+							<form class="search-wrapper ng-pristine ng-valid" action="">
 								<div class="wrap-search">
 									<a href="#"><i class="icon-search"></i></a> 
-									<input type="search" placeholder="Search" data-ng-model="searchTerm" class="ng-pristine ng-untouched ng-valid">
+									<input type="search" placeholder="Search" class="ng-pristine ng-untouched ng-valid search-item" id="searchInput">
 								</div>
 							</form>
+							<div id="noResultsMessage">No results found</div>
+							<div id="totalResults"></div>
 							<!-- <a ng-show="showSearch" class="link-cta back-to-menu ng-hide" href="#;" ng-click="backToMenu()">Back to menu</a> -->
 							<div class="menu__wrapper hide-search">
 								<ul class="inner-page"> 
-									<li class="ng-scope">
+									<li class="ng-scope news">
 										<div class="ng-scope">
 											<a class="ng-binding" href="news.html">News</a>
 										</div>
 									</li>
-									<li class="ng-scope">
+									<li class="ng-scope projects">
 										<div class="ng-scope">
 											<a class="ng-binding" href="projects.html">Projects</a>
 										</div>
 									</li>
-									<li ng-repeat="item in menu" class="ng-scope">
+									<li class="ng-scope profile">
 										<div class="ng-scope">
 											<a class="ng-binding" href="profile.html">Profile</a>
 										</div>
 									</li>
-									<li class="ng-scope">
+									<li class="ng-scope career">
 										<div class="ng-scope">
 											<a class="ng-binding" href="career.html">Career</a>
 										</div>
 									</li>
-									<li class="ng-scope">
+									<li class="ng-scope archive">
 										<div class="ng-scope">
 											<a class="ng-binding" href="archive.html">Archive</a>
 										</div>
 									</li>
-									<li class="ng-scope">
+									<li class="ng-scope people">
 										<div class="ng-scope">
 											<a class="ng-binding" href="people.html">People</a>
 										</div>
@@ -96,10 +98,10 @@
 									<ul class="social-links ng-scope"></ul>
 								</div>
 								<ul class="social-links links-cookie">
-									<li>
+									<li class="cookSet">
 										<a href="#;">Cookie Settings</a>
 									</li>
-									<li>
+									<li class="cookPol">
 										<a href="#;">Cookie Policy</a>
 									</li>
 								</ul>
@@ -114,7 +116,7 @@
 							</a>
 							<div class="menu__wrapper">
 								<ul class="inner-page">
-									<li>
+									<li class="discover">
 										<h3 class="head-line">Discover BXN, a creative studio with a concept of constant development and perfection.
 										</h3>
 									</li>
@@ -122,7 +124,7 @@
 							</div>
 							<div class="bottom">
 								<ul>
-									<li>
+									<li class="featPro">
 										<a>Featured project: Untitled
 										</a>
 									</li>
@@ -133,20 +135,20 @@
 				</div>
 			</div>
 		</header>
-		<div id="Page" data-ui-view="Page">
+		<div id="Page">
 			<div class="page-content ng-scope loaded" id="PageNews">
 				<div class="container-fluid">
 					<div class="row main-block">
 						<div class="lasted-news-box sticky-with-parent blocked mouseover loaded setPin">
 							<div class="current-page ng-binding">News</div>
-							<h1 ng-bind-html="teaser" class="ng-binding">
+							<h1 class="ng-binding">
 								<p>News</p>
 							</h1>
 							<a href="#;">
 								<div class="wrap-img">
-									<div class="super-img ng-isolate-scope loaded">
+									<div class="super-img ng-isolate-scope loaded dacposter">
 										<img src="img/DACPOSTER.webp">
-										<div class="click-gallery"></div>
+										<div class="click-gallery">click</div>
 									</div>
 								</div>
 							</a>
