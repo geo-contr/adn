@@ -186,6 +186,15 @@ body.body-overflow{
 	    height: 60px;
 	    bottom: 0;
 	}
+	.swiper-wrapper {
+	     height: 100%; 
+	}
+	.swiper-slide img {
+	     height: 100%; 
+	}
+	.inner-text p{
+		max-width: 85%;
+	}
 }
 .epfl, .negativeText{
 	-webkit-animation: textAnim 1s 5s both;
