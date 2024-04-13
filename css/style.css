@@ -1988,3 +1988,22 @@ body.body-overflow{
     transition: transform .8s;
     transition: transform .8s, -webkit-transform .8s;
 }
+
+.search-item[type="search"]::-webkit-search-cancel-button{
+	-webkit-appearance: none;
+	 position: relative;
+	 height: 3em;
+	 width: 2.5em;
+	 border-radius: 50em;
+	 background: url(../img/clear.svg) no-repeat 50% 50%;
+	 -webkit-transform: translateX(5px);
+	         transform: translateX(5px);
+	 background-size: contain;
+	 opacity: 0;
+	 pointer-events: none;
+	 cursor: pointer;
+}
+.search-item[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: 1;
+    pointer-events: all;
+}
