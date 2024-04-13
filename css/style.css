@@ -85,6 +85,14 @@ body{
 }
 
 @media(min-width: 1000px){
+	.wrap-search{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.wrap-search input {
+	    width: auto;
+	}
 	#PageLanding .swiper-button{
 		-webkit-animation: swButton 1.5s 3.7s both;
 		        animation: swButton 1.5s 3.7s both;
