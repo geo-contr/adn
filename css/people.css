@@ -10,6 +10,7 @@
     margin-bottom: revert;
 }
 #Header .menu ul.inner-page li div, #Header .menu ul.inner-page li:nth-child(4) div, #Header .menu ul.inner-page li:nth-child(4) div:before{
+	width: 0;
     opacity: .5;
 }
 #Header .menu ul.inner-page li:nth-child(6) div, #Header .menu ul.inner-page li:nth-child(6) div:before{
