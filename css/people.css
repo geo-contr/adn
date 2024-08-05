@@ -9,10 +9,17 @@
 	margin-top: revert;
     margin-bottom: revert;
 }
-#Header .menu ul.inner-page li div, #Header .menu ul.inner-page li:nth-child(4) div, #Header .menu ul.inner-page li:nth-child(4) div:before{
-	width: 0;
+#Header .menu ul.inner-page li div, #Header .menu ul.inner-page li:nth-child(4) div{
     opacity: .5;
 }
-#Header .menu ul.inner-page li:nth-child(6) div, #Header .menu ul.inner-page li:nth-child(6) div:before{
+#Header .menu ul.inner-page li:nth-child(4) div::before{
+	width: 0;
+	height: 0;
+}
+#Header .menu ul.inner-page li:nth-child(2):hover div::before, #Header .menu ul.inner-page li:nth-child(4):hover div::before, #Header .menu ul.inner-page li:nth-child(5):hover div::before{
+	width: 7px;
+	height: 7px;
+}
+#Header .menu ul.inner-page li:nth-child(6) div, #Header .menu ul.inner-page li:nth-child(6) div::before{
     opacity: 1;
 }

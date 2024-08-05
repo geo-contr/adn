@@ -68,7 +68,7 @@
 #Header .menu ul.inner-page li div{
     opacity: .5;
 }
-#Header .menu ul.inner-page li:nth-child(1) div, #Header .menu ul.inner-page li:nth-child(1) div:before{
+#Header .menu ul.inner-page li:nth-child(1) div, #Header .menu ul.inner-page li:nth-child(1) div::before{
     opacity: 1;
 }
 #Header .menu ul.inner-page li div{
@@ -77,8 +77,11 @@
 #Header .menu ul.inner-page li:nth-child(2) div{
     opacity: .5;
 }
-#Header .menu ul.inner-page li:nth-child(2) div:before{
+#Header .menu ul.inner-page li:nth-child(2) div::before{
 	opacity: 0;
+}
+#Header .menu ul.inner-page li:nth-child(2):hover div::before{
+    opacity: 1;
 }
 
 .dacposter .click-gallery{
