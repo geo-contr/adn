@@ -423,7 +423,7 @@ body{
 		animation: heighten 1.5s 3.5s both;
 	}*/
 	#PageLanding .super-img_height {
-	     height: 100vh; 
+		height: 100vh; 
 	    /* height: 112vh; */
 	    -webkit-animation: height 1.5s 3.5s both;
 	            animation: height 1.5s 3.5s both;
@@ -465,7 +465,8 @@ body{
 	@-webkit-keyframes height{
 		0%{
 	    }
-	    90%{
+	    30%{
+	    	height: 100vh;
 	    }
 	    100%{
 	    	height: 86vh;
@@ -476,7 +477,8 @@ body{
 	@keyframes height{
 		0%{
 	    }
-	    90%{
+	    30%{
+	    	height: 100vh;
 	    }
 	    100%{
 	    	height: 86vh;
@@ -873,9 +875,6 @@ body{
 	/*.body-img-div{
 		display: none;
 	}*/
-	/*#Page>.page-content {
-	    padding-top: 0;
-	}*/
 	.module-module_a .wrap-text-in-md, .module-module_b .wrap-text-in-md, .module-module_c .wrap-text-in-md {
 	    margin-top: 18px;
 	}
@@ -904,6 +903,17 @@ body{
 	.col-md-10.mouseover, .col-md-5.wrap-img-video, .wrap-text-in-md{
 		width: 100%;
 	}
+	/*#Page>.page-content {
+	    padding-top: 0;
+	    animation: paddTop 2s 4.6s both;
+	}
+	@keyframes paddTop{
+		0%{
+	    }
+	    100%{
+	    	padding-top: 56px;
+	    }
+	}*/
 	#body-img-div #body-img{
 		position: absolute;
 		z-index: 1111;
@@ -1085,8 +1095,8 @@ body{
 	@-webkit-keyframes height{
 		0%{
 	    }
-	    50%{
-	    	/*height: 100vh;*/
+	    30%{
+	    	height: 100vh;
 	    }
 	    100%{
 	    	height: 69vh;
@@ -1097,8 +1107,8 @@ body{
 	@keyframes height{
 		0%{
 	    }
-	    50%{
-	    	/*height: 100vh;*/
+	    30%{
+	    	height: 100vh;
 	    }
 	    100%{
 	    	height: 69vh;
@@ -1366,6 +1376,7 @@ body{
 	#Header{
 		-webkit-animation: topToBottom .8s 4.6s both;
         animation: topToBottom .8s 4.6s both;
+        /*animation: topToBottom .8s 4.6s both;*/
         opacity: 0;
 	}
 	@-webkit-keyframes topToBottom {
@@ -1996,6 +2007,8 @@ body.body-overflow{
     transition: transform .8s;
     transition: transform .8s, -webkit-transform .8s;
 }
+
+
 
 .search-item[type="search"]::-webkit-search-cancel-button{
 	-webkit-appearance: none;
