@@ -464,6 +464,7 @@ body{
 	}
 	@-webkit-keyframes height{
 		0%{
+			height: 100vh;
 	    }
 	    30%{
 	    	height: 100vh;
@@ -476,6 +477,7 @@ body{
 	}
 	@keyframes height{
 		0%{
+			height: 100vh;
 	    }
 	    30%{
 	    	height: 100vh;
@@ -1094,6 +1096,7 @@ body{
 	}*/
 	@-webkit-keyframes height{
 		0%{
+			height: 100vh;
 	    }
 	    30%{
 	    	height: 100vh;
@@ -1106,6 +1109,7 @@ body{
 	}
 	@keyframes height{
 		0%{
+			height: 100vh;
 	    }
 	    30%{
 	    	height: 100vh;
