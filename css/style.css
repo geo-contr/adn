@@ -81,6 +81,7 @@ body{
 	-webkit-transition: .5s;
 	-o-transition: .5s;
 	transition: .5s;
+	pointer-events: none;
 	/*bottom: 56px; */
 }
 
@@ -128,6 +129,7 @@ body{
 		-webkit-transition: .5s .3s;
 		-o-transition: .5s .3s;
 		transition: .5s .3s;
+		pointer-events: all;
 	}
 	.swiper-slide.swiper-slide-next .link-cta.white:before, .swiper-slide.swiper-slide-prev .link-cta.white:before{
 		color: transparent;
@@ -183,6 +185,7 @@ body{
 	    color: #fff;
 	    font-size: 50px;
 	    opacity: 0;
+	    pointer-events: none;
 	    /*animation: fonts 1.5s 4.5s both;*/
 	}
 	.swiper-slide .news-slider-item-description h3 .ng-binding1, .swiper-slide .news-slider-item-description h3 .ng-binding2, .swiper-slide .news-slider-item-description h3 .ng-binding0{
@@ -196,6 +199,7 @@ body{
 	    color: #fff;
 	    opacity: 0;
 	    font-size: 50px;
+	    pointer-events: none;
 	    /*animation: fonts .5s .5s both;*/
 	}
 	/* img hover and overlay */
@@ -236,6 +240,7 @@ body{
 	    transition: .5s;
 		color: transparent;
 		background-color: transparent;
+		pointer-events: none;
 	}
 	#PageLanding .swiper-slide:nth-child(2).swiper-slide-next .news-slider-item-description h5.ng-binding1{
 	    font-size: 13px;
