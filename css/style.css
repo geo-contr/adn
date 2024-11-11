@@ -690,7 +690,8 @@ body{
     max-width: none;
     -o-object-fit: cover;
        object-fit: cover;
-    opacity: 1; 
+    opacity: 1;
+	cursor: pointer;
 }
 /*.swiper-slide:nth-child(1) img{
 	object-position: 0 0;
