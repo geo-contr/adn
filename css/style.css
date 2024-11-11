@@ -1253,6 +1253,7 @@ body{
 	    -webkit-transition: .5s .3s;
 	    -o-transition: .5s .3s;
 	    transition: .5s .3s;
+	    pointer-events: all;
 	}
 	@-webkit-keyframes fonts{
 	    0%{
