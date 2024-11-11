@@ -1,128 +1,185 @@
-// $(document).ready(function(){
-
-// });
-
-
-// var swiper = new Swiper('.swiper', {
-//     speed: 800,
-//     freeMode: true,
-//     // slidesPerView: .9,
-//     breakpoints: {
-//         577: {
-//             pagination: {
-//                 el: '.swiper-pagination',
-//                 type: 'fraction',
-//             },
-//             navigation: {
-//                 nextEl: '.swiper-button-next',
-//                 prevEl: '.swiper-button-prev',
-//             }
-//         },
-//         320: {
-//             pagination: {
-//                 el: '.swiper-pagination',
-//                     type: 'fraction',
-//                     renderFraction: function (currentClass, totalClass) {
-//                         return '<span class="' + currentClass + '"></span>' +
-//                             '<span class="separator">/</span>' +
-//                             '<span class="' + totalClass + '"></span>';
-//                     },
-//                     formatFractionTotal: function (number) {
-//                         // Subtract 1 from the total number of slides
-//                         return number - 1;
-//                     },
-//                     formatFractionCurrent: function (number) {
-//                         // Subtract 1 from the current slide index
-//                         return number - 1;
-//                     },
-//             },
-//               navigation: {
-//                 nextEl: '.swiper-button-next',
-//                 prevEl: '.swiper-button-prev',
-//               },
-//               speed: 800,
-//               // freeMode: false,
-//               slidesPerView: 'auto', // Add this to make it responsive
-//               initialSlide: 0, // Start from the last slide (adjust as needed)
-//         }
-//     },
-// });
-
-
-
-
-
-
-
-// var swiper = new Swiper('.swiper', {
-//     speed: 800,
-//     freeMode: false,
-//     slidesPerView: 'auto',
-//     pagination: {
-//         el: '.swiper-pagination',
-//         type: 'fraction',
-//         renderFraction: function (currentClass, totalClass) {
-//             return '<span class="' + currentClass + '"></span>' +
-//                 '<span class="separator">/</span>' +
-//                 '<span class="' + totalClass + '"></span>';
-//         },
-//         formatFractionTotal: function (number) {
-//             // Subtract 1 from the total number of slides
-//             return number - 1;
-//         },
-//         formatFractionCurrent: function (number) {
-//             // Subtract 1 from the current slide index
-//             return number - 1;
-//         },
-//     },
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-// });
-
-// var slides = document.querySelectorAll('.swiper-slide');
-// var wrapper = document.querySelector('.swiper-wrapper');
-
-// swiper.on('slideChange', function () {
-//     var activeIndex = swiper.activeIndex;
-//     var transformValue = 'translateX(0)';
-
-//     if (activeIndex === 1) {
-//     transformValue = 'translateX(-60.33%)'; // Change this as needed
-//   } else if (activeIndex === 2) {
-//     transformValue = 'translateX(-160.66%)'; // Change this as needed
-//   } else if (activeIndex === 3) {
-//     transformValue = 'translateX(-260.66%)'; // Change this as needed
-//   }
-
-//   wrapper.style.transform = transformValue;
-
-//   // Reset other slides
-//   slides.forEach(function (slide, index) {
-//     if (index !== activeIndex) {
-//       slide.style.transform = 'translateX(0)';
+// Swiper slider without click on img
+// var isBreakPoint = function (bp) {
+//     var bps = [320, 999, 3840],
+//         w = $(window).width(),
+//         min, max
+//     for (var i = 0, l = bps.length; i < l; i++) {
+//       if (bps[i] === bp) {
+//         min = bps[i-1] || 0
+//         max = bps[i]
+//         break
+//       }
 //     }
-//   });
-// });
+//     return w > min && w <= max
+// }
 
+
+// if (isBreakPoint(3840)) { 
+//     var swiper = new Swiper('.swiper', {
+//         speed: 800,
+//         freeMode: false,
+//         slidesPerView: 'auto',
+//         simulateTouch: false,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             type: 'fraction',
+//             renderFraction: function (currentClass, totalClass) {
+//                 return '<span class="' + currentClass + '"></span>' +
+//                     '<span class="separator">/</span>' +
+//                     '<span class="' + totalClass + '"></span>';
+//             },
+//             formatFractionTotal: function (number) {
+//                 // Subtract 1 from the total number of slides
+//                 return number - 1;
+//             },
+//             formatFractionCurrent: function (number) {
+//                 // Subtract 1 from the current slide index
+//                 return number - 1;
+//             },
+//         },
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+//     });
+
+//     var slides = document.querySelectorAll('.swiper-slide');
+//     var wrapper = document.querySelector('.swiper-wrapper');
+
+//     swiper.on('slideChange', function () {
+//         var activeIndex = swiper.activeIndex;
+//         var transformValue = 'translateX(0)';
+
+//         if (activeIndex === 1) {
+//         transformValue = 'translateX(-60.33%)'; // Change this as needed
+//       } else if (activeIndex === 2) {
+//         transformValue = 'translateX(-160.66%)'; // Change this as needed
+//       } else if (activeIndex === 3) {
+//         transformValue = 'translateX(-260.66%)'; // Change this as needed
+//       }
+
+//       wrapper.style.transform = transformValue;
+
+//       // Reset other slides
+//       slides.forEach(function (slide, index) {
+//         if (index !== activeIndex) {
+//           slide.style.transform = 'translateX(0)';
+//         }
+//       });
+//     });
+   
+// }; // Breakpoint between 1000 and 3840
+
+
+// if (isBreakPoint(999)) { 
+//     var swiper = new Swiper('.swiper', {
+//         speed: 800,
+//         freeMode: false,
+//         slidesPerView: 'auto',
+//         pagination: {
+//             el: '.swiper-pagination',
+//             type: 'fraction',
+//             renderFraction: function (currentClass, totalClass) {
+//                 return '<span class="' + currentClass + '"></span>' +
+//                     '<span class="separator">/</span>' +
+//                     '<span class="' + totalClass + '"></span>';
+//             },
+//             formatFractionTotal: function (number) {
+//                 // Subtract 1 from the total number of slides
+//                 return number - 1;
+//             },
+//             formatFractionCurrent: function (number) {
+//                 // Subtract 1 from the current slide index
+//                 return number - 1;
+//             },
+//         },
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+//     });
+
+//     var slides = document.querySelectorAll('.swiper-slide');
+//     var wrapper = document.querySelector('.swiper-wrapper');
+
+//     swiper.on('slideChange', function () {
+//         var activeIndex = swiper.activeIndex;
+//         var transformValue = 'translateX(0)';
+
+//         if (activeIndex === 1) {
+//         transformValue = 'translateX(-95.33%)'; // Change this as needed
+//       } else if (activeIndex === 2) {
+//         transformValue = 'translateX(-195.66%)'; // Change this as needed
+//       } else if (activeIndex === 3) {
+//         transformValue = 'translateX(-295.66%)'; // Change this as needed
+//       }
+
+//       wrapper.style.transform = transformValue;
+
+//       // Reset other slides
+//       slides.forEach(function (slide, index) {
+//         if (index !== activeIndex) {
+//           slide.style.transform = 'translateX(0)';
+//         }
+//       });
+//     });
+    
+// } // Breakpoint between 320 and 999
+// End of Swiper slider without click on img
+
+
+// Swiper slider with click on img
+// Common function to set up the click-based slide control
+function setupSlideClickNavigation(slides, swiper) {
+    let isFirstClick = true; // Track if it's the first click
+
+    slides.forEach(function(slide) {
+        slide.addEventListener('click', function(event) {
+            if (isFirstClick) {
+                // On the first click, always go to the next slide
+                swiper.slideNext();
+                isFirstClick = false; // Set the flag to false after the first click
+            } else {
+                // Calculate the clicked position on the slide
+                const clickPosition = event.offsetX;
+                const slideWidth = slide.offsetWidth;
+
+                if (clickPosition < slideWidth / 2) {
+                    // Clicked on the left side, go to the previous slide
+                    swiper.slidePrev();
+                } else {
+                    // Clicked on the right side, go to the next slide
+                    swiper.slideNext();
+                }
+            }
+        });
+    });
+
+    // Reset isFirstClick when slider returns to the initial slide
+    swiper.on('slideChange', function () {
+        if (swiper.activeIndex === 0) {
+            isFirstClick = true;
+        }
+    });
+}
+
+// Your existing breakpoint detection and Swiper initialization code
 
 var isBreakPoint = function (bp) {
     var bps = [320, 999, 3840],
         w = $(window).width(),
-        min, max
+        min, max;
     for (var i = 0, l = bps.length; i < l; i++) {
       if (bps[i] === bp) {
-        min = bps[i-1] || 0
-        max = bps[i]
-        break
+        min = bps[i-1] || 0;
+        max = bps[i];
+        break;
       }
     }
-    return w > min && w <= max
-}
+    return w > min && w <= max;
+};
 
-
-if (isBreakPoint(3840)) { 
+if (isBreakPoint(3840)) {
     var swiper = new Swiper('.swiper', {
         speed: 800,
         freeMode: false,
@@ -137,11 +194,9 @@ if (isBreakPoint(3840)) {
                     '<span class="' + totalClass + '"></span>';
             },
             formatFractionTotal: function (number) {
-                // Subtract 1 from the total number of slides
                 return number - 1;
             },
             formatFractionCurrent: function (number) {
-                // Subtract 1 from the current slide index
                 return number - 1;
             },
         },
@@ -152,34 +207,32 @@ if (isBreakPoint(3840)) {
     });
 
     var slides = document.querySelectorAll('.swiper-slide');
-    var wrapper = document.querySelector('.swiper-wrapper');
+    setupSlideClickNavigation(slides, swiper);
 
+    var wrapper = document.querySelector('.swiper-wrapper');
     swiper.on('slideChange', function () {
         var activeIndex = swiper.activeIndex;
         var transformValue = 'translateX(0)';
 
         if (activeIndex === 1) {
-        transformValue = 'translateX(-60.33%)'; // Change this as needed
-      } else if (activeIndex === 2) {
-        transformValue = 'translateX(-160.66%)'; // Change this as needed
-      } else if (activeIndex === 3) {
-        transformValue = 'translateX(-260.66%)'; // Change this as needed
-      }
-
-      wrapper.style.transform = transformValue;
-
-      // Reset other slides
-      slides.forEach(function (slide, index) {
-        if (index !== activeIndex) {
-          slide.style.transform = 'translateX(0)';
+            transformValue = 'translateX(-60.33%)';
+        } else if (activeIndex === 2) {
+            transformValue = 'translateX(-160.66%)';
+        } else if (activeIndex === 3) {
+            transformValue = 'translateX(-260.66%)';
         }
-      });
+
+        wrapper.style.transform = transformValue;
+
+        slides.forEach(function (slide, index) {
+            if (index !== activeIndex) {
+                slide.style.transform = 'translateX(0)';
+            }
+        });
     });
-   
-}; // Breakpoint between 1000 and 3840
+}
 
-
-if (isBreakPoint(999)) { 
+if (isBreakPoint(999)) {
     var swiper = new Swiper('.swiper', {
         speed: 800,
         freeMode: false,
@@ -193,11 +246,9 @@ if (isBreakPoint(999)) {
                     '<span class="' + totalClass + '"></span>';
             },
             formatFractionTotal: function (number) {
-                // Subtract 1 from the total number of slides
                 return number - 1;
             },
             formatFractionCurrent: function (number) {
-                // Subtract 1 from the current slide index
                 return number - 1;
             },
         },
@@ -208,31 +259,36 @@ if (isBreakPoint(999)) {
     });
 
     var slides = document.querySelectorAll('.swiper-slide');
-    var wrapper = document.querySelector('.swiper-wrapper');
+    setupSlideClickNavigation(slides, swiper);
 
+    var wrapper = document.querySelector('.swiper-wrapper');
     swiper.on('slideChange', function () {
         var activeIndex = swiper.activeIndex;
         var transformValue = 'translateX(0)';
 
         if (activeIndex === 1) {
-        transformValue = 'translateX(-95.33%)'; // Change this as needed
-      } else if (activeIndex === 2) {
-        transformValue = 'translateX(-195.66%)'; // Change this as needed
-      } else if (activeIndex === 3) {
-        transformValue = 'translateX(-295.66%)'; // Change this as needed
-      }
-
-      wrapper.style.transform = transformValue;
-
-      // Reset other slides
-      slides.forEach(function (slide, index) {
-        if (index !== activeIndex) {
-          slide.style.transform = 'translateX(0)';
+            transformValue = 'translateX(-95.33%)';
+        } else if (activeIndex === 2) {
+            transformValue = 'translateX(-195.66%)';
+        } else if (activeIndex === 3) {
+            transformValue = 'translateX(-295.66%)';
         }
-      });
+
+        wrapper.style.transform = transformValue;
+
+        slides.forEach(function (slide, index) {
+            if (index !== activeIndex) {
+                slide.style.transform = 'translateX(0)';
+            }
+        });
     });
-    
-} // Breakpoint between 320 and 999
+}
+// End of Swiper slider with click on img
+
+
+
+
+
 
 
 
@@ -691,7 +747,6 @@ if (mediaQuery.matches) {
 // });
 
 
-// ამას ვიყენებ
 // $(document).ready(function() {
 //     // Function to handle search
 //     function handleSearch() {
@@ -742,6 +797,238 @@ if (mediaQuery.matches) {
 //     handleSearch();
 // });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     const searchInput = document.querySelector(".search-item");
+//     const searchResults = document.getElementById("searchResults");
+
+//     // Event listener for input
+//     searchInput.addEventListener("input", function() {
+//         const searchTerm = searchInput.value.toLowerCase().trim();
+//         displaySearchResults(searchTerm);
+//     });
+
+//     // Function to filter and display search results
+//     function displaySearchResults(searchTerm) {
+//         // Get all elements you want to search through
+//         const itemsToSearch = document.querySelectorAll(".module-module_a, .module-module_b");
+
+//         // Clear previous results
+//         searchResults.innerHTML = "";
+
+//         itemsToSearch.forEach(function(item) {
+//             const title = item.querySelector("h2, h4");
+//             const text = item.querySelector(".text");
+
+//             if (title && text) {
+//                 const titleText = title.textContent.toLowerCase();
+//                 const contentText = text.textContent.toLowerCase();
+
+//                 // Check if title or content contains search term
+//                 if (titleText.includes(searchTerm) || contentText.includes(searchTerm)) {
+//                     // Clone the item and append to results
+//                     const clone = item.cloneNode(true);
+//                     searchResults.appendChild(clone);
+//                 }
+//             }
+//         });
+
+//         // If no results found
+//         if (searchResults.innerHTML === "") {
+//             searchResults.innerHTML = "<p>No results found.</p>";
+//         }
+//     }
+// });
+
+// ამას ვიყენებ
+// document.addEventListener("DOMContentLoaded", function() {
+//     const searchInput = document.querySelector(".search-item");
+//     const searchResults = document.getElementById("searchResults");
+//     const wrapBtMenu = document.querySelector(".wrap-bt-menu");
+
+//     // Event listener for input
+//     searchInput.addEventListener("input", function() {
+//         const searchTerm = searchInput.value.toLowerCase().trim();
+//         displaySearchResults(searchTerm);
+//     });
+
+//     // Function to filter and display search results
+//     function displaySearchResults(searchTerm) {
+//         // Get all elements you want to search through
+//         const itemsToSearch = document.querySelectorAll(".module-module_a, .module-module_b, .related-news1");
+
+//         // Clear previous results
+//         searchResults.innerHTML = "";
+
+//         itemsToSearch.forEach(function(item) {
+//             const title = item.querySelector("h2, h4");
+//             const text = item.querySelector(".text, .text1");
+
+//             if (title && text) {
+//                 const titleText = title.textContent.toLowerCase();
+//                 const contentText = text.textContent.toLowerCase();
+
+//                 // Check if title or content contains search term
+//                 if (titleText.includes(searchTerm) || contentText.includes(searchTerm)) {
+//                     // Clone the item and append to results
+//                     const clone = item.cloneNode(true);
+//                     searchResults.appendChild(clone);
+//                 }
+//             }
+//         });
+
+//         // If no results found
+//         if (searchResults.innerHTML === "") {
+//             searchResults.innerHTML = "<p>No results found.</p>";
+//         }
+//     }
+
+//     // Event listener to cancel search on wrap-bt-menu click
+//     wrapBtMenu.addEventListener("click", function() {
+//         cancelSearch();
+//     });
+
+//     // Event listener to cancel search on search cancel button (::-webkit-search-cancel-button) click
+//     searchInput.addEventListener("search", function() {
+//         // Check if search input is empty
+//         if (!searchInput.value.trim()) {
+//             cancelSearch();
+//         }
+//     });
+
+//     // Function to cancel search
+//     function cancelSearch() {
+//         searchInput.value = ""; // Clear search input
+//         searchResults.innerHTML = ""; // Clear search results
+//     }
+// });
+
+
+
+    // // Function to perform search
+    // function performSearch() {
+    //     // Get the search query
+    //     var query = document.getElementById("searchInput").value.toLowerCase().trim();
+    //     var resultsContainer = document.getElementById("searchResults");
+    //     resultsContainer.innerHTML = ""; // Clear previous results
+
+    //     // Loop through all the elements with class "ng-binding" to find matches
+    //     var elements = document.querySelectorAll(".inner-page, .bottom, .wrap-extra-main-menu, .main-block");
+    //     var matchesFound = false;
+    //     for (var i = 0; i < elements.length; i++) {
+    //         var elementText = elements[i].innerText.toLowerCase();
+    //         if (elementText.includes(query)) {
+    //             // Create a new div for each match and append to results container
+    //             var matchDiv = document.createElement("div");
+    //             matchDiv.textContent = elements[i].textContent;
+    //             resultsContainer.appendChild(matchDiv);
+    //             matchesFound = true;
+    //         }
+    //     }
+
+    //     // If no matches found, display a message
+    //     if (!matchesFound) {
+    //         var noResultsDiv = document.createElement("div");
+    //         noResultsDiv.textContent = "No results found";
+    //         resultsContainer.appendChild(noResultsDiv);
+    //     }
+    // }
+
+    // // Handle form submission
+    // document.getElementById("search-form").addEventListener("submit", function(event) {
+    //     event.preventDefault(); // Prevent form submission
+    //     performSearch(); // Call the search function
+    // });
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const searchInput = document.getElementById("searchInput");
+//     const searchResults = document.getElementById("searchResults");
+
+//     searchInput.addEventListener("input", function (event) {
+//         const searchText = event.target.value.toLowerCase();
+//         const filteredResults = filterResults(searchText);
+
+//         displayResults(filteredResults);
+//     });
+
+//     function filterResults(searchText) {
+//         const allLinks = document.querySelectorAll(".inner-page a, .trtr");
+//         const filteredLinks = Array.from(allLinks).filter((link) => {
+//             return link.textContent.toLowerCase().includes(searchText);
+//         });
+
+//         return filteredLinks;
+//     }
+
+//     function displayResults(results) {
+//         searchResults.innerHTML = "";
+
+//         if (results.length === 0) {
+//             searchResults.innerHTML = "<li>No results found.</li>";
+//         } else {
+//             results.forEach((result) => {
+//                 const li = document.createElement("li");
+//                 const a = document.createElement("a");
+//                 a.textContent = result.textContent;
+//                 a.href = result.href;
+//                 li.appendChild(a);
+//                 searchResults.appendChild(li);
+//             });
+//         }
+//     }
+// });
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const searchInput = document.querySelector(".search-item");
+//   const searchResultsContainer = document.getElementById("searchResults");
+
+//   // Function to perform search
+//   function performSearch(searchTerm) {
+//     // Get all elements where you want to search
+//     const elementsToSearch = document.querySelectorAll(".searchable");
+
+//     let results = [];
+
+//     // Loop through each element
+//     elementsToSearch.forEach((element) => {
+//       const textContent = element.textContent.toLowerCase();
+//       // Check if element's text content contains the search term
+//       if (textContent.includes(searchTerm.toLowerCase())) {
+//         results.push(element.innerHTML);
+//       }
+//     });
+
+//     // Display search results
+//     if (results.length > 0) {
+//       searchResultsContainer.innerHTML = results.join("<hr>");
+//     } else {
+//       searchResultsContainer.innerHTML = "No results found.";
+//     }
+//   }
+
+//   // Event listener for search input
+//   searchInput.addEventListener("input", function (event) {
+//     const searchTerm = event.target.value.trim();
+//     if (searchTerm.length > 0) {
+//       performSearch(searchTerm);
+//     } else {
+//       searchResultsContainer.innerHTML = ""; // Clear results if search term is empty
+//     }
+//   });
+// });
+
+
+
+
+
 
 
 // end of Search
+
+
+
+
+
