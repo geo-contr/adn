@@ -134,25 +134,31 @@ function setupSlideClickNavigation(slides, swiper) {
     let isFirstClick = true; // Track if it's the first click
 
     slides.forEach(function(slide) {
-        slide.addEventListener('click', function(event) {
-            if (isFirstClick) {
-                // On the first click, always go to the next slide
-                swiper.slideNext();
-                isFirstClick = false; // Set the flag to false after the first click
-            } else {
-                // Calculate the clicked position on the slide
-                const clickPosition = event.offsetX;
-                const slideWidth = slide.offsetWidth;
+        // Select the img element within each slide
+        const slideImage = slide.querySelector('img');
 
-                if (clickPosition < slideWidth / 2) {
-                    // Clicked on the left side, go to the previous slide
-                    swiper.slidePrev();
-                } else {
-                    // Clicked on the right side, go to the next slide
+        // Check if there's an img element to add the event listener to
+        if (slideImage) {
+            slideImage.addEventListener('click', function(event) {
+                if (isFirstClick) {
+                    // On the first click, always go to the next slide
                     swiper.slideNext();
+                    isFirstClick = false; // Set the flag to false after the first click
+                } else {
+                    // Calculate the clicked position on the img element
+                    const clickPosition = event.offsetX;
+                    const imgWidth = slideImage.offsetWidth;
+
+                    if (clickPosition < imgWidth / 2) {
+                        // Clicked on the left side, go to the previous slide
+                        swiper.slidePrev();
+                    } else {
+                        // Clicked on the right side, go to the next slide
+                        swiper.slideNext();
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // Reset isFirstClick when slider returns to the initial slide
@@ -284,11 +290,6 @@ if (isBreakPoint(999)) {
     });
 }
 // End of Swiper slider with click on img
-
-
-
-
-
 
 
 
