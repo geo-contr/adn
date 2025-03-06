@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body{
 	-webkit-animation: posFixed 4s 2.9s both;
 	        animation: posFixed 4s 2.9s both;
@@ -203,6 +210,9 @@ body{
 	    /*animation: fonts .5s .5s both;*/
 	}
 	/* img hover and overlay */
+	#PageLanding .swiper-slide-active .news-slider-item-description, #PageLanding .swiper-slide-next .news-slider-item-description{
+		pointer-events: none;
+	}
 	#PageLanding .swiper-slide-active .super-img_hover img{
 		/*box-shadow: 0px 0px 80px rgba(127, 137, 161, 0.25);*/
 		-webkit-transition: all 0.8s;
@@ -263,12 +273,23 @@ body{
 		transition: 0.8s;
 		left: 0%;
 	}
-	#PageLanding .swiper-slide-active .super-img_hover img:hover{
+	/*#PageLanding .swiper-slide-active .super-img_hover img:hover{
 		-webkit-transition: all 0.8s;
 		-o-transition: all 0.8s;
 		transition: all 0.8s;
 		left: -50px;
+	}*/
+
+	#PageLanding .swiper-slide-active .super-img_hover img {
+	    -webkit-transition: all 0.8s;
+	    -o-transition: all 0.8s;
+	    transition: all 0.8s;
 	}
+
+	#PageLanding .swiper-slide-active .super-img_hover img.ready:hover {
+	    left: -50px;
+	}
+
 	#PageLanding .swiper-slide-active .super-img_hover:hover{
 		-webkit-transition: all 0.8s;
 		-o-transition: all 0.8s;
@@ -409,7 +430,7 @@ body{
 	    /*margin-bottom: 0;*/
 	}
 	#PageLanding .news-slider-container .news-slider-list .fixed-slide {
-	    padding-left: 6.5vw;
+	    padding-left: 11.5vw;
 	}
 	/*.swiper-wrapper{
 		height: 86vh;
@@ -427,11 +448,16 @@ body{
 	/*.swiper-slide:nth-child(2) img{
 		animation: heighten 1.5s 3.5s both;
 	}*/
+	#PageLanding .news-slider-container .news-slider-list{
+		padding-left: 0;
+		/*margin-left: -87px*/
+	}
 	#PageLanding .super-img_height {
 		height: 100vh; 
 	    /* height: 112vh; */
-	    -webkit-animation: height 1.5s 3.5s both;
-	            animation: height 1.5s 3.5s both;
+	    webkit-animation: height 1.5s 3.5s both;
+	            -webkit-animation: height 1.5s 3.5s both;
+	                    animation: height 1.5s 3.5s both;
 	}
 	@-webkit-keyframes right{
 		0%{
@@ -808,7 +834,7 @@ body{
 }
 @media(max-width: 1600px){
 	#PageLanding .news-slider-container .news-slider-list .fixed-slide {
-	    padding-left: 4.5vw;
+	    padding-left: 11.5vw;
 	}
 	#PageLanding .news-slider-container .fixed-slide h1 {
 	    font-size: 3.1vw;
