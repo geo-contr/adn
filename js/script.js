@@ -127,6 +127,15 @@
 // } // Breakpoint between 320 and 999
 // End of Swiper slider without click on img
 
+// ჰოვერის ძალაში შესვლა
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.querySelectorAll('#PageLanding .swiper-slide-active .super-img_hover img').forEach(img => {
+            img.classList.add('ready');
+        });
+    }, 5000); // 5000ms = 5 seconds
+});
+
 
 // Swiper slider with click on img
 // Common function to set up the click-based slide control
@@ -221,11 +230,11 @@ if (isBreakPoint(3840)) {
         var transformValue = 'translateX(0)';
 
         if (activeIndex === 1) {
-            transformValue = 'translateX(-60.33%)';
+            transformValue = 'translateX(-55.33%)';
         } else if (activeIndex === 2) {
-            transformValue = 'translateX(-160.66%)';
+            transformValue = 'translateX(-155.66%)';
         } else if (activeIndex === 3) {
-            transformValue = 'translateX(-260.66%)';
+            transformValue = 'translateX(-255.66%)';
         }
 
         wrapper.style.transform = transformValue;
@@ -401,22 +410,39 @@ if (isBreakPoint(999)) {
 // // 3200
 
 
-  $(".wrap-bt-menu").click(function(){
-    $(".menu").toggleClass("menu-open");
-    $(".search-wrapper").toggleClass("search-open");
-    $(".menu__wrapper").toggleClass("menu__wrapper-open");
-    $(".wrap-extra-main-menu").toggleClass("wrap-extra-main-menu-open");
-    $(".overlay-menu").toggleClass("overlay-menu-open");
-    $(".icon-menu").toggleClass("icon-menu-close");
-    $(".nav").toggleClass("nav-border");
-    $(".bottom").toggleClass("bottom-show");
-    $("body").toggleClass("body-overflow");
-  });
+  // $(".wrap-bt-menu").click(function(){
+  //   $(".menu").toggleClass("menu-open");
+  //   $(".search-wrapper").toggleClass("search-open");
+  //   $(".menu__wrapper").toggleClass("menu__wrapper-open");
+  //   $(".wrap-extra-main-menu").toggleClass("wrap-extra-main-menu-open");
+  //   $(".overlay-menu").toggleClass("overlay-menu-open");
+  //   $(".icon-menu").toggleClass("icon-menu-close");
+  //   $(".nav").toggleClass("nav-border");
+  //   $(".bottom").toggleClass("bottom-show");
+  //   $("body").toggleClass("body-overflow");
+  // });
 
-  $(".overlay-menu").click(function(){
-    $(".menu-open, .overlay-menu, .wrap-extra-main-menu, .search-wrapper, .menu__wrapper, .icon-menu, body, .nav, .bottom").removeClass("menu-open overlay-menu-open wrap-extra-main-menu-open menu__wrapper-open icon-menu-close body-overflow search-open nav-border bottom-show");
-  });
+  // $(".overlay-menu").click(function(){
+  //   $(".menu-open, .overlay-menu, .wrap-extra-main-menu, .search-wrapper, .menu__wrapper, .icon-menu, body, .nav, .bottom").removeClass("menu-open overlay-menu-open wrap-extra-main-menu-open menu__wrapper-open icon-menu-close body-overflow search-open nav-border bottom-show");
+  // });
 
+
+  $(".wrap-bt-menu").on("click", function() {
+      $(".menu").toggleClass("menu-open");
+      $(".search-wrapper").toggleClass("search-open");
+      $(".menu__wrapper").toggleClass("menu__wrapper-open");
+      $(".wrap-extra-main-menu").toggleClass("wrap-extra-main-menu-open");
+      $(".overlay-menu").toggleClass("overlay-menu-open");
+      $(".icon-menu").toggleClass("icon-menu-close");
+      $(".nav").toggleClass("nav-border");
+      $(".bottom").toggleClass("bottom-show");
+      $("body").toggleClass("body-overflow");
+    });
+
+    $(".overlay-menu").on("click", function() {
+      $(".menu-open, .overlay-menu-open, .wrap-extra-main-menu-open, .menu__wrapper-open, .icon-menu-close, .body-overflow, .search-open, .nav-border, .bottom-show")
+        .removeClass("menu-open overlay-menu-open wrap-extra-main-menu-open menu__wrapper-open icon-menu-close body-overflow search-open nav-border bottom-show");
+    });
 
 
 
@@ -562,24 +588,41 @@ if (mediaQuery1.matches) {
     // setTimeout(removeElement, 3200);
     // // end of Function to remove the HTML tag
 
+
     // Function to remove the HTML tag with animation
+    // მარტო ლოგოსთვის
     function removeElementWithAnimation() {
-      var element = document.getElementById("body-img");
-      var element1 = document.getElementById("logo-frontpage");
-
-      // Add the fade-out class to initiate the CSS transition
-      element.classList.add("fade-out");
-      element1.classList.add("fade-out");
-
-      // Set a timeout to remove the element after the transition ends
-      setTimeout(function() {
-        element.parentNode.removeChild(element);
-        element1.parentNode.removeChild(element1);
-      }, 0); // 1000ms (1 second) matches the transition duration
+      var element = document.getElementById("logo-frontpage");
+      if (element) {
+        element.classList.add("fade-out");
+        setTimeout(function() {
+          if (element.parentNode) {
+            element.parentNode.removeChild(element);
+          }
+        }, 1000); // Ensure this matches your CSS animation duration
+      }
     }
 
-    // Call the removeElementWithAnimation function after 3200 milliseconds (3.2 seconds)
     setTimeout(removeElementWithAnimation, 3200);
+
+    // ორივესთვის
+    // function removeElementWithAnimation() {
+    //   var element = document.getElementById("body-img");
+    //   var element1 = document.getElementById("logo-frontpage");
+
+    //   // Add the fade-out class to initiate the CSS transition
+    //   // element.classList.add("fade-out");
+    //   element1.classList.add("fade-out");
+
+    //   // Set a timeout to remove the element after the transition ends
+    //   setTimeout(function() {
+    //     element.parentNode.removeChild(element);
+    //     element1.parentNode.removeChild(element1);
+    //   }, 0); // 1000ms (1 second) matches the transition duration
+    // }
+
+    // // Call the removeElementWithAnimation function after 3200 milliseconds (3.2 seconds)
+    // setTimeout(removeElementWithAnimation, 3200);
 
     // 3200
 
