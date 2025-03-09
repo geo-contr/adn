@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body{
 	-webkit-animation: load .5s .9s both;
 	        animation: load .5s .9s both;
@@ -386,229 +393,310 @@ body{
 .module-gallery-shen .swiper-slide:nth-child(1){
 	background-image: url(../img/3xn_MaritimeMuseumShenzhen_CrashingWavesB_Final_Sora.webp);
 	height: 100vh;
-    background-size: contain;
+    /*background-size: 60vh;*/
+    background-size: 60vh;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-shen .swiper-slide:nth-child(2){
-	background-image: url(../img/3xn_MaritimeMuseumShenzhen_Vertex_Final_Sora_web.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
+    /*background-clip: content-box;*/
+    /*padding: 130px 40px;*/
 }
 .module-gallery-folies .swiper-slide{
 	background-image: url(../img/1445-Folie-République-Montpellier-The-curve.webp);
 	height: 100vh;
-    background-size: contain;
+    /*background-size: 60vh;*/
+    background-size: 60vh;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
+    /*background-clip: content-box;*/
+    /*padding: 130px 40px;*/
+}
+.module-gallery-basque .swiper-slide{
+	background-image: url(../img/3XN_BasqueCulinaryCenter_Render-credits-SORA-1.webp);
+	height: 100vh;
+    background-size: 60vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-basque .swiper-slide:nth-child(2){
+	background-image: url(../img/3XN_BasqueCulinaryCenter_Renders-3XN-2.webp);
+	height: 100vh;
+    background-size: 60vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-basque .swiper-slide:nth-child(3){
+	background-image: url(../img/Render-credits-SORA-4.webp);
+	height: 100vh;
+    background-size: 55vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-aarhus .swiper-slide{
+	background-image: url(../img/13.webp);
+	height: 100vh;
+    background-size: 55vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-campus .swiper-slide:nth-child(3){
+	background-image: url(../img/1250_Campus_Freimann_archive_exterior2_1269x1200.webp);
+	height: 100vh;
+    background-size: 70vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-maersk .swiper-slide{
+	background-image: url(../img/1429_Maersk_AMG44_Street-facade.webp);
+	height: 100vh;
+    background-size: 60vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-church .swiper-slide{
+	background-image: url(../img/1241_Church_and_Wellesley_archive_portrait_2000x3069.webp);
+	height: 100vh;
+    background-size: 48vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-trell .swiper-slide{
+	background-image: url(../img/1203_Ny_Trelleborg_master_portrait.webp);
+	height: 100vh;
+    background-size: 56vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.module-gallery-nobel .swiper-slide{
+	background-image: url(../img/1150_Nobel_View_6_case-top-image-2.webp);
+	height: 100vh;
+    background-size: 56vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+@media(min-width: 1000px) and (min-height: 700px){
+	.module-gallery-shen .swiper-slide:nth-child(1), .module-gallery-basque .swiper-slide, .module-gallery-basque .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide:nth-child(3){
+		background-size: 60vh;
+	}
+	.module-gallery-folies .swiper-slide{
+		background-size: 55vh;
+	}
+	.module-gallery-basque .swiper-slide:nth-child(3), .module-gallery-aarhus .swiper-slide, .module-gallery-maersk .swiper-slide{
+		background-size: 55vh;
+	}
+	.module-gallery-campus .swiper-slide:nth-child(3){
+		background-size: 70vh;
+	}
+	.module-gallery-church .swiper-slide{
+		background-size: 48vh;
+	}
+	.module-gallery-trell .swiper-slide{
+		background-size: 53vh;
+	}
+	.module-gallery-nobel .swiper-slide{
+		background-size: 53vh;
+	}
+}
+@media(max-width: 1280px) and (max-height: 720px){
+	.module-gallery-church .swiper-slide{
+		background-size: calc(60vh - 8%);
+	}
+}
+@media(min-width: 1000px) and (max-height: 699px){
+	.module-gallery-shen .swiper-slide:nth-child(1), .module-gallery-folies .swiper-slide, .module-gallery-basque .swiper-slide, .module-gallery-basque .swiper-slide:nth-child(2), .module-gallery-basque .swiper-slide:nth-child(3), .module-gallery-aarhus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(3), .module-gallery-maersk .swiper-slide, .module-gallery-trell .swiper-slide, .module-gallery-nobel .swiper-slide{
+		background-size: calc(60vh - 4%);
+	}
+	/*.module-gallery-church .swiper-slide{
+		background-size: calc(60vh - 4%);
+	}*/
+}
+@media(max-width: 999px) and (max-height: 660px){
+	.module-gallery-shen .swiper-slide:nth-child(1), .module-gallery-folies .swiper-slide, .module-gallery-basque .swiper-slide, .module-gallery-basque .swiper-slide:nth-child(2), .module-gallery-basque .swiper-slide:nth-child(3), .module-gallery-aarhus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(3), .module-gallery-maersk .swiper-slide, .module-gallery-church .swiper-slide, .module-gallery-trell .swiper-slide, .module-gallery-nobel .swiper-slide{
+		background-size: calc(60vh - 8%);
+	}
+}
+@media(max-width: 700px){
+	.module-gallery-campus .swiper-slide:nth-child(3){
+		background-size: 84%;
+	}
+}
+@media(max-width: 560px){
+	.module-gallery-shen .swiper-slide:nth-child(1), .module-gallery-basque .swiper-slide, .module-gallery-basque .swiper-slide:nth-child(2), .module-gallery-basque .swiper-slide:nth-child(3), .module-gallery-aarhus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(3), .module-gallery-maersk .swiper-slide, .module-gallery-church .swiper-slide, .module-gallery-nobel .swiper-slide{
+		background-size: 84%;
+	}
+	.module-gallery-folies .swiper-slide{
+		background-size: 84%;
+	}
+	.module-gallery-trell .swiper-slide{
+		background-size: 63%;
+	}
+}
+@media(max-width: 560px) and (max-height: 660px){
+	.module-gallery-shen .swiper-slide:nth-child(1), .module-gallery-basque .swiper-slide, .module-gallery-basque .swiper-slide:nth-child(2), .module-gallery-basque .swiper-slide:nth-child(3), .module-gallery-aarhus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(3), .module-gallery-maersk .swiper-slide, .module-gallery-church .swiper-slide, .module-gallery-trell .swiper-slide, .module-gallery-nobel .swiper-slide{
+		background-size: calc(60vh - 4%);
+	}
+}
+@media(max-width: 560px) and (max-height: 770px){
+	.module-gallery-folies .swiper-slide{
+		background-size: calc(60vh - 4%);
+	}
+}
+@media(max-width: 512px){
+	.module-gallery-folies .swiper-slide{
+		background-size: 84%;
+	}
+}
+@media(max-width: 375px) and (max-height: 660px){
+	.module-gallery-shen .swiper-slide:nth-child(1), .module-gallery-folies .swiper-slide, .module-gallery-basque .swiper-slide, .module-gallery-basque .swiper-slide:nth-child(2), .module-gallery-basque .swiper-slide:nth-child(3), .module-gallery-aarhus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(3), .module-gallery-maersk .swiper-slide, .module-gallery-church .swiper-slide, .module-gallery-trell .swiper-slide, .module-gallery-nobel .swiper-slide{
+		background-size: calc(60vh - 23%);
+	}
+}
+
+.module-gallery-shen .swiper-slide:nth-child(2){
+	background-image: url(../img/3xn_MaritimeMuseumShenzhen_Vertex_Final_Sora_web.webp);
+	height: 100vh;
+    background-size: 62%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    /*background-clip: content-box;*/
+    /*padding: 130px 40px;*/
 }
 .module-gallery-folies .swiper-slide:nth-child(2){
 	background-image: url(../img/1445-Folie-République-Montpellier-Street-arrival.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-folies .swiper-slide:nth-child(3){
 	background-image: url(../img/1445-Folie-République-Montpellier-Sunny-terraces.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-folies .swiper-slide:nth-child(4){
 	display: inherit;
 	background-image: url(../img/1445-Folie-République-Montpellier-Terraces-Green.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-basque .swiper-slide{
-	background-image: url(../img/3XN_BasqueCulinaryCenter_Render-credits-SORA-1.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-basque .swiper-slide:nth-child(2){
-	background-image: url(../img/3XN_BasqueCulinaryCenter_Renders-3XN-2.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-basque .swiper-slide:nth-child(3){
-	background-image: url(../img/Render-credits-SORA-4.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-aarhus .swiper-slide{
-	background-image: url(../img/13.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-aarhus .swiper-slide:nth-child(2){
 	background-image: url(../img/3XN_AarhusStadion_Spotted_Final_Sora.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-campus .swiper-slide{
 	background-image: url(../img/1250_Campus_Freimann_archive_portrait_exterior_2000x1048.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-campus .swiper-slide:nth-child(2){
 	background-image: url(../img/1250_Campus_Freimann_archive_exterior_1909x1000.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-campus .swiper-slide:nth-child(3){
-	background-image: url(../img/1250_Campus_Freimann_archive_exterior2_1269x1200.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-campus .swiper-slide:nth-child(4){
 	display: inherit;
 	background-image: url(../img/1250_Campus_Freimann_archive_interior_1667x1000.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-campus .swiper-slide:nth-child(5){
 	background-image: url(../img/1250_Campus_Freimann_archive_exterior_1925x1000.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-maersk .swiper-slide{
-	background-image: url(../img/1429_Maersk_AMG44_Street-facade.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-maersk .swiper-slide:nth-child(2){
 	background-image: url(../img/1429_Maersk_AMG44_Aerial_fullsize.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 49%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-maersk .swiper-slide:nth-child(3){
 	background-image: url(../img/1429_Maersk_AMG44_View01_Street_View_Entrance.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-museum .swiper-slide{
 	background-image: url(../img/01_print.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-church .swiper-slide{
-	background-image: url(../img/1241_Church_and_Wellesley_archive_portrait_2000x3069.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-church .swiper-slide:nth-child(2){
 	background-image: url(../img/1241_Church_and_Wellesley_archive_slider2_1557x1000.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 56%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-trell .swiper-slide{
-	background-image: url(../img/1203_Ny_Trelleborg_master_portrait.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
-}
-.module-gallery-nobel .swiper-slide{
-	background-image: url(../img/1150_Nobel_View_6_case-top-image-2.webp);
-	height: 100vh;
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
 }
 .module-gallery-nobel .swiper-slide:nth-child(2){
 	background-image: url(../img/Nobel-Centre_1920x1080.webp);
 	height: 100vh;
-    background-size: contain;
+    background-size: 62%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-clip: content-box;
-    padding: 130px 40px;
+}
+@media(max-width: 1660px){
+	.module-gallery-shen .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(3), .module-gallery-folies .swiper-slide:nth-child(4), .module-gallery-aarhus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide:nth-child(4), .module-gallery-campus .swiper-slide:nth-child(5), .module-gallery-maersk .swiper-slide:nth-child(3), .module-gallery-museum .swiper-slide, .module-gallery-nobel .swiper-slide:nth-child(2){
+	    background-size: 70%;
+	}
+	.module-gallery-maersk .swiper-slide:nth-child(2){
+		background-size: 55%;
+	}
+	.module-gallery-church .swiper-slide:nth-child(2){
+		background-size: 64%;
+	}
+}
+@media(max-width: 1460px){
+	.module-gallery-shen .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(3), .module-gallery-folies .swiper-slide:nth-child(4), .module-gallery-aarhus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide:nth-child(4), .module-gallery-campus .swiper-slide:nth-child(5), .module-gallery-maersk .swiper-slide:nth-child(3), .module-gallery-museum .swiper-slide, .module-gallery-nobel .swiper-slide:nth-child(2){
+	    background-size: 80%;
+	}
+	.module-gallery-maersk .swiper-slide:nth-child(2){
+		background-size: 62%;
+	}
+	.module-gallery-church .swiper-slide:nth-child(2){
+		background-size: 73%;
+	}
+}
+@media(min-width: 1280px) and (max-height: 820px){
+	.module-gallery-shen .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(3), .module-gallery-folies .swiper-slide:nth-child(4), .module-gallery-aarhus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide:nth-child(4), .module-gallery-campus .swiper-slide:nth-child(5), .module-gallery-maersk .swiper-slide:nth-child(3), .module-gallery-museum .swiper-slide, .module-gallery-church .swiper-slide:nth-child(2), .module-gallery-nobel .swiper-slide:nth-child(2){
+	    background-size: 115vh;
+	}
+	.module-gallery-maersk .swiper-slide:nth-child(2){
+		background-size: 88vh;
+	}
+}
+@media(max-width: 1280px) and (max-height: 720px){
+	.module-gallery-church .swiper-slide:nth-child(2){
+	    background-size: 107vh;
+	}
+}
+@media(max-width: 1279px) and (max-height: 740px){
+	.module-gallery-shen .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(3), .module-gallery-folies .swiper-slide:nth-child(4), .module-gallery-aarhus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide:nth-child(4), .module-gallery-campus .swiper-slide:nth-child(5), .module-gallery-maersk .swiper-slide:nth-child(2), .module-gallery-maersk .swiper-slide:nth-child(3), .module-gallery-museum .swiper-slide, .module-gallery-church .swiper-slide:nth-child(2), .module-gallery-nobel .swiper-slide:nth-child(2){
+	    background-size: 115vh;
+	}
+}
+@media(max-width: 900px){
+	.module-gallery-shen .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(2), .module-gallery-folies .swiper-slide:nth-child(3), .module-gallery-folies .swiper-slide:nth-child(4), .module-gallery-aarhus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide, .module-gallery-campus .swiper-slide:nth-child(2), .module-gallery-campus .swiper-slide:nth-child(4), .module-gallery-campus .swiper-slide:nth-child(5), .module-gallery-maersk .swiper-slide:nth-child(2), .module-gallery-maersk .swiper-slide:nth-child(3), .module-gallery-museum .swiper-slide, .module-gallery-church .swiper-slide:nth-child(2), .module-gallery-nobel .swiper-slide:nth-child(2){
+	    background-size: 86%;
+	}
 }
 /* CSS for the white background overlay */
 .swiper-overlay {
@@ -819,7 +907,3 @@ body{
         opacity: 1;
     }
 }
-
-
-
-
